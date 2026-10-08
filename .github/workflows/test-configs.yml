@@ -54,7 +54,14 @@ jobs:
           git add output/
           if git diff --cached --quiet; then
             echo "No changes"
-          else
-            git commit -m "Update working configs $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            exit 0
           fi
+          git commit -m "Update working configs $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for attempt in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed, retrying"
+            sleep 5
+          done
+          exit 1
