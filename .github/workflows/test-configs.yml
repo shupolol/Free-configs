@@ -3,6 +3,10 @@ name: Test V2Ray configs
 on:
   schedule:
     - cron: "*/20 * * * *"
+  push:
+    paths:
+      - "scripts/**"
+      - ".github/workflows/test-configs.yml"
   workflow_dispatch:
 
 permissions:
