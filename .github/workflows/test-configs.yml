@@ -39,12 +39,12 @@ jobs:
         env:
           XRAY_BIN: xray
           OUTPUT_DIR: output
-          PER_SOURCE: "333"
           TOP_N: "200"
+          TIME_BUDGET: "720"
           DEBUG_FAILURES: "20"
-          WORKERS: "24"
-          TEST_TIMEOUT: "8"
-          PROBES: "3"
+          WORKERS: "48"
+          TEST_TIMEOUT: "5"
+          PROBES: "2"
         run: python3 scripts/test_configs.py
 
       - name: Commit working configs
