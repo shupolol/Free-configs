@@ -40,9 +40,9 @@ jobs:
           XRAY_BIN: xray
           OUTPUT_DIR: output
           TOP_N: "200"
-          TIME_BUDGET: "720"
+          TIME_BUDGET: "900"
           DEBUG_FAILURES: "20"
-          WORKERS: "48"
+          WORKERS: "100"
           TEST_TIMEOUT: "5"
           PROBES: "2"
         run: python3 scripts/test_configs.py
