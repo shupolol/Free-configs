@@ -1,0 +1,54 @@
+name: Test V2Ray configs
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: test-configs
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install xray
+        run: |
+          XRAY_VERSION=$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases/latest | python3 -c "import sys,json;print(json.load(sys.stdin)['tag_name'])")
+          curl -fsSL -o xray.zip "https://github.com/XTLS/Xray-core/releases/download/${XRAY_VERSION}/Xray-linux-64.zip"
+          unzip -o xray.zip xray -d "$HOME/xray-bin"
+          chmod +x "$HOME/xray-bin/xray"
+          echo "$HOME/xray-bin" >> "$GITHUB_PATH"
+
+      - name: Test configs
+        env:
+          XRAY_BIN: xray
+          OUTPUT_DIR: output
+          PER_SOURCE: "333"
+          WORKERS: "24"
+          TEST_TIMEOUT: "8"
+          PROBES: "3"
+        run: python3 scripts/test_configs.py
+
+      - name: Commit working configs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update working configs $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
