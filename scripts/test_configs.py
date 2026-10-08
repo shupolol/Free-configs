@@ -25,6 +25,8 @@ PROTOCOL_RE = re.compile(r"^(vmess|vless|trojan|ss)://", re.IGNORECASE)
 OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "output")
 XRAY_BIN = os.environ.get("XRAY_BIN", "xray")
 PER_SOURCE = int(os.environ.get("PER_SOURCE", "333"))
+TOP_N = int(os.environ.get("TOP_N", "200"))
+DEBUG_FAILURES = int(os.environ.get("DEBUG_FAILURES", "20"))
 WORKERS = int(os.environ.get("WORKERS", "24"))
 TEST_URL = os.environ.get("TEST_URL", "https://www.gstatic.com/generate_204")
 TIMEOUT = float(os.environ.get("TEST_TIMEOUT", "8"))
@@ -146,6 +148,20 @@ def build_outbound(link: str) -> dict | None:
     return None
 
 
+def transport_tier(outbound: dict) -> int:
+    """Lower is better. Reality and TLS-with-WebSocket/gRPC are harder for censors to block than plain transports."""
+    stream = outbound.get("streamSettings", {})
+    security = stream.get("security", "none")
+    network = stream.get("network", "tcp")
+    if security == "reality":
+        return 0
+    if security == "tls" and network in ("ws", "grpc"):
+        return 1
+    if security == "tls":
+        return 2
+    return 3
+
+
 def outbound_host(outbound: dict) -> str:
     settings = outbound["settings"]
     entry = settings["vnext"][0] if "vnext" in settings else settings["servers"][0]
@@ -181,18 +197,29 @@ def probe_delay(port: int) -> float | None:
     return float(parts[1]) * 1000
 
 
-def test_link(link: str) -> tuple[str, float | None, str | None]:
+_failure_count = 0
+
+
+def report_failure(reason: str, host: str) -> None:
+    global _failure_count
+    _failure_count += 1
+    if _failure_count <= DEBUG_FAILURES:
+        print(f"[fail] {host}: {reason}")
+
+
+def test_link(link: str) -> tuple[str, float | None, str | None, int | None]:
     try:
         outbound = build_outbound(link)
     except (ValueError, KeyError, TypeError, UnicodeDecodeError):
-        return link, None, None
+        return link, None, None, None
     if outbound is None:
-        return link, None, None
+        return link, None, None, None
     host = outbound_host(outbound)
+    tier = transport_tier(outbound)
     outbound["tag"] = "proxy"
     port = free_port()
     config = {
-        "log": {"loglevel": "none"},
+        "log": {"loglevel": "warning"},
         "inbounds": [{"listen": "127.0.0.1", "port": port, "protocol": "socks",
                       "settings": {"udp": False}}],
         "outbounds": [outbound],
@@ -200,27 +227,31 @@ def test_link(link: str) -> tuple[str, float | None, str | None]:
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
         json.dump(config, f)
         cfg_path = f.name
-    proc = subprocess.Popen([XRAY_BIN, "run", "-c", cfg_path],
-                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    try:
-        if not wait_for_port(port):
-            return link, None, host
-        delays = []
-        for _ in range(PROBES):
-            delay = probe_delay(port)
-            if delay is None:
-                break
-            delays.append(delay)
-        if not delays:
-            return link, None, host
-        return link, min(delays), host
-    finally:
-        proc.terminate()
+    with tempfile.TemporaryFile("w+") as err:
+        proc = subprocess.Popen([XRAY_BIN, "run", "-c", cfg_path],
+                                stdout=subprocess.DEVNULL, stderr=err)
         try:
-            proc.wait(timeout=5)
-        except subprocess.TimeoutExpired:
-            proc.kill()
-        os.unlink(cfg_path)
+            if not wait_for_port(port):
+                err.seek(0)
+                report_failure(f"xray did not start: {err.read().strip()[-200:]}", host)
+                return link, None, host, tier
+            delays = []
+            for _ in range(PROBES):
+                delay = probe_delay(port)
+                if delay is None:
+                    break
+                delays.append(delay)
+            if not delays:
+                report_failure("probe failed through proxy", host)
+                return link, None, host, tier
+            return link, min(delays), host, tier
+        finally:
+            proc.terminate()
+            try:
+                proc.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                proc.kill()
+            os.unlink(cfg_path)
 
 
 def geolocate(hosts: list[str]) -> dict[str, tuple[str, str]]:
@@ -247,6 +278,20 @@ def flag_for(country_code: str) -> str:
     if len(country_code) != 2 or not country_code.isalpha():
         return "🌐"
     return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in country_code.upper())
+
+
+NEAR_IRAN = [
+    "IR", "AE", "IQ", "TR", "AM", "AZ", "TM", "AF", "PK", "OM", "KW", "QA", "BH", "SA",
+    "GE", "JO", "SY", "LB", "IL", "TJ", "UZ", "KZ", "RU", "TH", "IN", "CY", "EG", "BY",
+    "UA", "DE", "NL", "FR", "GB", "FI", "SE", "SG",
+]
+
+
+def proximity_rank(country_code: str) -> int:
+    try:
+        return NEAR_IRAN.index(country_code)
+    except ValueError:
+        return len(NEAR_IRAN)
 
 
 def rename(link: str, name: str) -> str:
@@ -277,15 +322,19 @@ def main() -> None:
 
     results = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        for link, delay, host in pool.map(test_link, links):
+        for link, delay, host, tier in pool.map(test_link, links):
             if delay is not None:
-                results.append((delay, link, host))
-    results.sort()
+                results.append((tier, delay, link, host))
     print(f"Working: {len(results)} / {len(links)}")
+    geo = geolocate(list({host for _, _, _, host in results}))
+    ranked = sorted(
+        results,
+        key=lambda r: (proximity_rank(geo.get(r[3], ("", ""))[0]), r[0], r[1]),
+    )[:TOP_N]
+    print(f"Selected top {len(ranked)} by country proximity to Iran, then transport tier, then delay")
 
-    geo = geolocate(list({host for _, _, host in results}))
     named = []
-    for n, (delay, link, host) in enumerate(results, start=1):
+    for n, (tier, delay, link, host) in enumerate(ranked, start=1):
         code, country = geo.get(host, ("", "Unknown"))
         name = f"{flag_for(code)} {country} {n:03d}"
         named.append(rename(link, name))
