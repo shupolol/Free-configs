@@ -2,7 +2,7 @@ name: Test V2Ray configs
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/20 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -36,6 +36,8 @@ jobs:
           XRAY_BIN: xray
           OUTPUT_DIR: output
           PER_SOURCE: "333"
+          TOP_N: "200"
+          DEBUG_FAILURES: "20"
           WORKERS: "24"
           TEST_TIMEOUT: "8"
           PROBES: "3"
