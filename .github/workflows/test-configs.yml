@@ -3,10 +3,6 @@ name: Test V2Ray configs
 on:
   schedule:
     - cron: "*/20 * * * *"
-  push:
-    paths:
-      - "scripts/**"
-      - ".github/workflows/test-configs.yml"
   workflow_dispatch:
 
 permissions:
@@ -19,7 +15,15 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
+    env:
+      XRAY_BIN: xray
+      OUTPUT_DIR: output
+      TIME_BUDGET: "600"
+      WORKERS: "100"
+      PROBES: "2"
+      TEST_TIMEOUT: "5"
+      PREFERRED_COUNTRIES: ${{ vars.PREFERRED_COUNTRIES }}
     steps:
       - uses: actions/checkout@v4
 
@@ -29,39 +33,54 @@ jobs:
 
       - name: Install xray
         run: |
-          XRAY_VERSION=$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases/latest | python3 -c "import sys,json;print(json.load(sys.stdin)['tag_name'])")
-          curl -fsSL -o xray.zip "https://github.com/XTLS/Xray-core/releases/download/${XRAY_VERSION}/Xray-linux-64.zip"
+          curl -fsSL -o xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
           unzip -o xray.zip xray -d "$HOME/xray-bin"
           chmod +x "$HOME/xray-bin/xray"
           echo "$HOME/xray-bin" >> "$GITHUB_PATH"
 
-      - name: Test configs
+      - name: Build all_configs.txt
         env:
-          XRAY_BIN: xray
-          OUTPUT_DIR: output
-          TOP_N: "200"
-          TIME_BUDGET: "900"
-          DEBUG_FAILURES: "20"
-          WORKERS: "100"
-          TEST_TIMEOUT: "5"
-          PROBES: "2"
-        run: python3 scripts/test_configs.py
+          ALL_TOP_N: "2000"
+        run: python3 scripts/build_all_configs.py
 
-      - name: Commit working configs
+      - name: Build preferred_secure.txt
+        env:
+          PREFERRED_TOP_N: "200"
+        run: python3 scripts/build_preferred.py
+
+      - name: Check output files
+        run: |
+          test -s output/all_configs.txt
+          test -s output/preferred_secure.txt
+          ls -la output/
+
+      - name: Write summary
+        if: always()
+        run: |
+          python3 - << 'EOF' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          try:
+              s = json.load(open("output/stats.json"))
+          except OSError:
+              print("No stats.json was written. Check the build steps above.")
+              raise SystemExit(0)
+          print("## Config test results\n")
+          print("| List | Tested | Candidates | Working | Written | Kept from last run |")
+          print("|---|---|---|---|---|---|")
+          for key in ("all_configs", "preferred_secure"):
+              r = s.get(key, {})
+              print(f"| {key} | {r.get('tested', '-')} | {r.get('candidates', '-')} | "
+                    f"{r.get('working', '-')} | {r.get('written', '-')} | "
+                    f"{r.get('kept_from_previous', '-')} |")
+          print(f"\nLast updated: {s.get('updated_at', '-')}")
+          EOF
+
+      - name: Commit output
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add output/
-          if git diff --cached --quiet; then
-            echo "No changes"
-            exit 0
-          fi
-          git commit -m "Update working configs $(date -u +'%Y-%m-%d %H:%M UTC')"
-          for attempt in 1 2 3; do
-            if git pull --rebase -X theirs origin main && git push origin HEAD:main; then
-              exit 0
-            fi
-            echo "Push attempt $attempt failed, retrying"
-            sleep 5
-          done
-          exit 1
+          git diff --cached --quiet && exit 0
+          git commit -m "Update configs $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
+          git push origin HEAD:main
