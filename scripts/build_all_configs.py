@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""Build output/all_configs.txt: up to ALL_TOP_N working configs, most secure transport first.
-
-Retests the configs from the previous run first, keeps the ones that still work, then adds any
-new working configs found in this run. No Iran preference.
-"""
 import os
 
 import configlib as c
