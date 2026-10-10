@@ -2,5 +2,26 @@
   "tested": 50047,
   "available": 55980,
   "working": 200,
-  "updated_at": "2026-10-10T18:56:32Z"
+  "updated_at": "2026-10-10T19:31:44Z",
+  "all_configs": {
+    "tested": 25866,
+    "candidates": 37282,
+    "working": 1176,
+    "written": 1176,
+    "kept_from_previous": 0,
+    "telegram_channels": [
+      "vlessconfig"
+    ]
+  },
+  "preferred_secure": {
+    "tested": 37453,
+    "candidates": 37453,
+    "working": 1743,
+    "written": 200,
+    "kept_from_previous": 0,
+    "preferred_countries": [],
+    "telegram_channels": [
+      "vlessconfig"
+    ]
+  }
 }
