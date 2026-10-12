@@ -2,23 +2,23 @@
   "tested": 50047,
   "available": 55980,
   "working": 200,
-  "updated_at": "2026-10-12T09:38:28Z",
+  "updated_at": "2026-10-12T19:35:35Z",
   "all_configs": {
-    "tested": 25747,
-    "candidates": 37825,
-    "working": 2276,
-    "written": 2000,
-    "kept_from_previous": 1606,
+    "tested": 24307,
+    "candidates": 38307,
+    "working": 1796,
+    "written": 1796,
+    "kept_from_previous": 1462,
     "telegram_channels": [
       "vlessconfig"
     ]
   },
   "preferred_secure": {
-    "tested": 37552,
-    "candidates": 37552,
-    "working": 2491,
+    "tested": 37725,
+    "candidates": 37725,
+    "working": 1810,
     "written": 200,
-    "kept_from_previous": 183,
+    "kept_from_previous": 172,
     "preferred_countries": [],
     "telegram_channels": [
       "vlessconfig"
