@@ -19,6 +19,21 @@ For example:
 
 Each list is also published base64-encoded, as `*_base64.txt`, for clients that expect that format.
 
+## FlClash / Clash Meta
+
+- `output/flclash.yaml`: a ready-to-import profile for FlClash, Clash.Meta, Clash Verge, Mihomo Party and Stash
+
+In FlClash: **Profiles → New → URL**, then paste:
+
+`` https://raw.githubusercontent.com/shupolol/Free-configs/refs/heads/main/output/flclash.yaml ``
+
+The profile has a `PROXY` group with every node, an `AUTO` group that picks the lowest-latency one, and private-address rules that stay direct. `output/flclash_base64.txt` holds the same profile base64-encoded, for clients that want a base64 subscription.
+
+This file is built from `all_configs.txt`, so every node in it already passed the Xray test in the same run. Two kinds of config get dropped on the way, and both are counted in `output/stats.json`:
+
+- The same server published more than once. One server fronted by a CDN often appears dozens of times under different names, so those collapse into a single node.
+- Transports Clash Meta has no equivalent for, such as XHTTP and HTTPUpgrade.
+
 ## Transport security ranking
 
 Configs are sorted by the first matching tier:
@@ -34,9 +49,11 @@ A config counts as skipping certificate verification only if its own link says s
 ## Sources
 
 - Subscription files are listed in `SOURCES` in `scripts/configlib.py`. They come from several public GitHub repositories. Each one is fetched on every run, decoded from base64 if needed, and its links are added to the candidate pool.
-- Telegram channels are listed in `TELEGRAM_CHANNELS` in the same file. The public preview page (`t.me/s/<channel>`) is read, and older pages are followed up to `TELEGRAM_PAGES`. Only channels with public previews work.
+- Telegram channels are listed in `TELEGRAM_CHANNELS` in the same file. Only the public preview page (`t.me/s/<channel>`) is read, because `t.me/<channel>` shows a "sign in to Telegram" wall and returns no posts. Older pages are followed up to `TELEGRAM_PAGES`. Only channels with public previews work.
 
 Duplicates are removed by server identity, so the same config under two different names is only tested once.
+
+Telegram links are queued ahead of the subscription-file links. The files contribute far more links than fit in `TIME_BUDGET`, and a run only tests what it reaches, so anything ordered after the shuffled bulk may never be tested at all.
 
 ## How a run works
 
@@ -46,29 +63,34 @@ Duplicates are removed by server identity, so the same config under two differen
 4. Look up each working server's country by its hostname or IP. Servers with unknown countries are dropped.
 5. Sort, cap, rename (for example `🇩🇪 Germany 001`, where the number is the rank in that file), and write the list.
 6. Write the counts to `output/stats.json`.
+7. Convert the finished list to `output/flclash.yaml`. This reads the tested list, so it never tests anything again.
 
 Previous configs that no longer work are removed. Previous configs that still work are kept, and new working configs are added.
 
-The two builders run one after the other. The second one reuses the first one's test results from a cache file (`CACHE_PATH`, default `/tmp/config_test_cache.json`), so it doesn't retest the same configs.
+The builders run one after the other. Each one after the first reuses the earlier test results from a cache file (`CACHE_PATH`, default `/tmp/config_test_cache.json`), so it doesn't retest the same configs.
 
 ## Files
 
 - `scripts/configlib.py`: shared code for collecting, converting links, testing, geolocation, and output
+- `scripts/clashlib.py`: converts a share link into a Clash Meta proxy and writes YAML
 - `scripts/build_all_configs.py`: builds `output/all_configs.txt`
 - `scripts/build_preferred.py`: builds `output/preferred_secure.txt` and `output/working_configs.txt`
+- `scripts/build_clash.py`: builds `output/flclash.yaml` from `output/all_configs.txt`
 - `scripts/check_existing.py`: retests the current output files without the cache and writes `output/existing_check.json`
-- `.github/workflows/test-configs.yml`: installs Xray, runs both builders on a schedule, and commits `output/`
+- `.github/workflows/test-configs.yml`: installs Xray, runs the builders on a schedule, and commits `output/`
 
 ## Running it yourself
 
-Requirements: Python 3.10 or newer, `curl`, and `xray` on your PATH (or set `XRAY_BIN`).
+Requirements: Python 3.10 or newer, `curl`, and `xray` on your PATH (or set `XRAY_BIN`). Nothing else: the Clash profile is written without a YAML library.
 
 From the repository root:
 
-python scripts/build_all_configs.py
-python scripts/build_preferred.py
-python scripts/check_existing.py
+    python scripts/build_all_configs.py
+    python scripts/build_preferred.py
+    python scripts/build_clash.py
+    python scripts/check_existing.py
 
+`build_clash.py` only converts, so it runs on its own in a second or two once a list exists.
 
 To check only one file: `python scripts/check_existing.py all_configs.txt`
 
@@ -92,12 +114,15 @@ Set these as environment variables. Defaults are in `scripts/configlib.py` and i
 | `DEBUG_FAILURES` | `20` | Failure messages to print |
 | `CACHE_PATH` | `/tmp/config_test_cache.json` | Test result cache shared by the builders |
 | `CACHE_TTL` | `3600` | Seconds a cached result is reused |
+| `CLASH_SOURCE` | `all_configs.txt` | Tested list that `build_clash.py` converts |
+| `CLASH_AUTO_TOP_N` | `60` | Nodes put in the profile's automatic latency group |
+| `CLASH_AUTO_URL` | value of `TEST_URL` | URL the automatic group measures latency against |
 
 In GitHub Actions, `PREFERRED_COUNTRIES` is read from the repository variable with the same name (Settings → Secrets and variables → Actions → Variables).
 
 ## Output
 
-`output/stats.json` records, for each list, how many configs were tested, how many were working, how many were written, and how many carried over from the previous run. `output/existing_check.json` lists each config checked by `check_existing.py` with its name, host, tier, pass or fail, and delay.
+`output/stats.json` records, for each list, how many configs were tested, how many were working, how many were written, and how many carried over from the previous run. Under `flclash` it also records how many duplicate servers were collapsed and why any config was skipped. `output/existing_check.json` lists each config checked by `check_existing.py` with its name, host, tier, pass or fail, and delay.
 
 ## Limitations
 
