@@ -1,0 +1,115 @@
+name: Test V2Ray configs
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: test-configs
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      XRAY_BIN: xray
+      OUTPUT_DIR: output
+      TIME_BUDGET: "600"
+      WORKERS: "100"
+      PROBES: "2"
+      TEST_TIMEOUT: "5"
+      PREFERRED_COUNTRIES: ${{ vars.PREFERRED_COUNTRIES }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install xray
+        run: |
+          curl -fsSL -o xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
+          unzip -o xray.zip xray -d "$HOME/xray-bin"
+          chmod +x "$HOME/xray-bin/xray"
+          echo "$HOME/xray-bin" >> "$GITHUB_PATH"
+
+      - name: Build all_configs.txt
+        env:
+          ALL_TOP_N: "2000"
+        run: python3 scripts/build_all_configs.py
+
+      - name: Build preferred_secure.txt
+        env:
+          PREFERRED_TOP_N: "200"
+        run: python3 scripts/build_preferred.py
+
+      - name: Build flclash.yaml
+        run: python3 scripts/build_clash.py
+
+      - name: Check output files
+        run: |
+          test -s output/all_configs.txt
+          test -s output/preferred_secure.txt
+          test -s output/flclash.yaml
+          ls -la output/
+
+      - name: Validate flclash.yaml
+        run: |
+          python3 -m pip install --quiet --disable-pip-version-check pyyaml
+          python3 - << 'EOF'
+          import yaml
+          profile = yaml.safe_load(open("output/flclash.yaml", encoding="utf-8"))
+          proxies = profile["proxies"]
+          names = [p["name"] for p in proxies]
+          assert proxies, "flclash.yaml has no proxies"
+          assert len(set(names)) == len(names), "duplicate proxy names"
+          groups = {g["name"]: g for g in profile["proxy-groups"]}
+          assert groups["PROXY"]["proxies"] == ["AUTO"] + names, "select group does not list every node"
+          assert set(groups["AUTO"]["proxies"]) <= set(names), "auto group lists unknown nodes"
+          assert all(p["server"] and p["port"] for p in proxies), "proxy without a server"
+          assert profile["rules"][-1] == "MATCH,PROXY", "last rule must be MATCH,PROXY"
+          print(f"flclash.yaml is valid: {len(proxies)} proxies, {len(groups)} groups, "
+                f"{len(profile['rules'])} rules")
+          kinds = {}
+          for p in proxies:
+              kinds[p["type"]] = kinds.get(p["type"], 0) + 1
+          print("types:", kinds)
+          EOF
+
+      - name: Write summary
+        if: always()
+        run: |
+          python3 - << 'EOF' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          try:
+              s = json.load(open("output/stats.json"))
+          except OSError:
+              print("No stats.json was written. Check the build steps above.")
+              raise SystemExit(0)
+          print("## Config test results\n")
+          print("| List | Tested | Candidates | Working | Written | Kept from last run |")
+          print("|---|---|---|---|---|---|")
+          for key in ("all_configs", "preferred_secure"):
+              r = s.get(key, {})
+              print(f"| {key} | {r.get('tested', '-')} | {r.get('candidates', '-')} | "
+                    f"{r.get('working', '-')} | {r.get('written', '-')} | "
+                    f"{r.get('kept_from_previous', '-')} |")
+          f = s.get("flclash", {})
+          print(f"| flclash.yaml | - | {f.get('input', '-')} | - | {f.get('written', '-')} | - |")
+          print(f"\nLast updated: {s.get('updated_at', '-')}")
+          EOF
+
+      - name: Commit output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/
+          git diff --cached --quiet && exit 0
+          git commit -m "Update configs $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
+          git push origin HEAD:main
