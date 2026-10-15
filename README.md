@@ -132,6 +132,6 @@ In GitHub Actions, `PREFERRED_COUNTRIES` is read from the repository variable wi
 - Telegram scraping depends on public preview pages, which Telegram can change at any time.
 - Check your local laws before using a proxy or circumvention tool.
 
-## License
+## Note
 
-No license is set. Add one before reusing the code.
+these configs come from telegram, and other subscriptions, there is a possibillity that these aren't safe, use at your own risk.
