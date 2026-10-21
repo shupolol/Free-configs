@@ -6,7 +6,6 @@ import concurrent.futures
 import html
 import json
 import os
-import random
 import re
 import socket
 import subprocess
@@ -17,43 +16,36 @@ import time
 import urllib.request
 from urllib.parse import parse_qs, quote, unquote, urlsplit
 
-# Subscription files are listed in scripts/sources.txt, one URL per line. That file is kept by
-# scripts/refresh_sources.py, which checks every source still serves configs and drops the dead
-# ones, so a source that moves or disappears stops costing a fetch on every run.
-SOURCES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources.txt")
+# The configs come from public Telegram channels, listed in scripts/channels.txt, one channel
+# name per line. That file is kept by scripts/refresh_channels.py, which checks every channel
+# still has a public preview with configs and drops the dead ones.
+CHANNELS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "channels.txt")
 
-# Used when scripts/sources.txt is missing, so the builders still work from a bare checkout.
-FALLBACK_SOURCES = [
-    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
-    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
-    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge.txt",
-    "https://raw.githubusercontent.com/10ium/V2Hub/main/merged",
-    "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt",
-    "https://raw.githubusercontent.com/mahdyaralipor/v2all/main/real_sub.txt",
-    "https://raw.githubusercontent.com/patterniha/Free-Configs/main/configs.txt",
-    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity.txt",
+# Used when scripts/channels.txt is missing, so the builders still work from a bare checkout.
+FALLBACK_CHANNELS = [
+    "vlessconfig",
+    "V2ray_Alpha",
+    "oneclickvpnkeys",
+    "v2rayNG_Matsuri",
+    "ConfigV2rayNG",
 ]
 
 
-def load_sources(path: str = SOURCES_FILE) -> list[str]:
-    """Read the source list. A missing or empty file falls back to the built-in list."""
+def load_channels(path: str = CHANNELS_FILE) -> list[str]:
+    """Read the channel list. A missing or empty file falls back to the built-in list."""
     try:
         with open(path, encoding="utf-8") as f:
-            urls = [line.strip() for line in f
-                    if line.strip() and not line.startswith("#")]
+            names = [line.strip().lstrip("@").split()[0] for line in f
+                     if line.strip() and not line.startswith("#")]
     except OSError:
-        return list(FALLBACK_SOURCES)
-    return urls or list(FALLBACK_SOURCES)
+        return list(FALLBACK_CHANNELS)
+    return list(dict.fromkeys(names)) or list(FALLBACK_CHANNELS)
 
-
-SOURCES = load_sources()
 
 # Public channels scraped from their t.me/s/<name> preview pages.
-# The plain t.me/<name> page shows a "sign in to Telegram" wall with no posts, so only the
+# The plain t.me/<name> page shows a "sign in to Telegram" wall and no posts, so only the
 # /s/ preview is usable without an account.
-TELEGRAM_CHANNELS = [
-    "vlessconfig",
-]
+TELEGRAM_CHANNELS = load_channels()
 
 PROTOCOL_RE = re.compile(r"^(vmess|vless|trojan|ss)://", re.IGNORECASE)
 TG_LINK_RE = re.compile(r"\b(?:vmess|vless|trojan|ss)://[^\s<>\"']+", re.IGNORECASE)
@@ -80,7 +72,9 @@ WORKERS = int(os.environ.get("WORKERS", "48"))
 TEST_URL = os.environ.get("TEST_URL", "https://www.gstatic.com/generate_204")
 TIMEOUT = float(os.environ.get("TEST_TIMEOUT", "5"))
 PROBES = int(os.environ.get("PROBES", "2"))
-TELEGRAM_PAGES = int(os.environ.get("TELEGRAM_PAGES", "5"))
+TELEGRAM_PAGES = int(os.environ.get("TELEGRAM_PAGES", "3"))
+TELEGRAM_WORKERS = int(os.environ.get("TELEGRAM_WORKERS", "16"))
+TELEGRAM_TIMEOUT = float(os.environ.get("TELEGRAM_TIMEOUT", "20"))
 CACHE_PATH = os.environ.get("CACHE_PATH", "/tmp/config_test_cache.json")
 CACHE_TTL = float(os.environ.get("CACHE_TTL", "3600"))
 GEO_URL = "http://ip-api.com/batch"
@@ -133,14 +127,14 @@ def fetch_telegram(channel: str, pages: int) -> list[str]:
 
     t.me/<channel> renders a sign-in wall and returns no posts, so the /s/ preview is the only
     route that works without a Telegram account. If Telegram serves that wall anyway, the run
-    continues with the remaining sources instead of dying."""
+    continues with the remaining channels instead of dying."""
     channel = channel.lstrip("@")
     found: list[str] = []
     before, visited, page_no = None, set(), -1
     for page_no in range(pages):
         url = f"https://t.me/s/{channel}" + (f"?before={before}" if before else "")
         try:
-            body = fetch(url)
+            body = fetch(url, timeout=TELEGRAM_TIMEOUT)
         except Exception as exc:
             print(f"[warn] could not fetch telegram preview @{channel}: {exc}", file=sys.stderr)
             break
@@ -186,11 +180,9 @@ def load_list(path: str) -> list[str]:
 
 def collect_candidates(previous: list[str]) -> list[str]:
     """Previous working configs first (so they are retested and kept if they still work),
-    then every Telegram link, then new links from the subscription files, deduplicated by identity.
+    then every config link posted in the Telegram channels, deduplicated by identity.
 
-    Telegram links come before the file sources on purpose: the sources contribute far more links
-    than fit in TIME_BUDGET, and a run only tests what it reaches, so anything ordered after the
-    shuffled bulk may never be tested at all."""
+    The channels are scraped in parallel, because one run reads a few dozen of them."""
     seen, candidates = set(), []
 
     def add(links: list[str]) -> int:
@@ -204,27 +196,21 @@ def collect_candidates(previous: list[str]) -> list[str]:
         return added
 
     prev_added = add(previous)
-    new_links = []
-    for src in SOURCES:
-        try:
-            body = decode_if_base64(fetch(src))
-        except Exception as exc:
-            print(f"[warn] could not fetch {src}: {exc}", file=sys.stderr)
-            continue
-        source_links = [line.strip() for line in body.splitlines() if PROTOCOL_RE.match(line.strip())]
-        print(f"{src.split('#')[0]}: {len(source_links)} links")
-        new_links.extend(source_links)
+
+    # The configs of the Mahsa repository, written by scripts/build_mahsa.py, are part of the
+    # pool as well. The file is missing on the first run, which is not a problem.
+    mahsa = load_list(os.path.join(OUTPUT_DIR, "mahsa_configs.txt"))
+    mahsa_added = add(mahsa)
+    if mahsa:
+        print(f"mahsa configs: {mahsa_added} new links")
 
     telegram_links = []
-    for channel in TELEGRAM_CHANNELS:
-        telegram_links.extend(fetch_telegram(channel, TELEGRAM_PAGES))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=TELEGRAM_WORKERS) as pool:
+        for links in pool.map(lambda c: fetch_telegram(c, TELEGRAM_PAGES), TELEGRAM_CHANNELS):
+            telegram_links.extend(links)
     tg_added = add(telegram_links)
-    print(f"telegram queue: {tg_added} new links tested first ({len(telegram_links)} scraped)")
-
-    random.shuffle(new_links)
-    added = add(new_links)
-    print(f"candidates: {prev_added} previous (unique) + {tg_added} telegram + {added} from sources "
-          f"= {len(candidates)}")
+    print(f"candidates: {prev_added} previous (unique) + {mahsa_added} mahsa + "
+          f"{tg_added} telegram = {len(candidates)}")
     return candidates
 
 
@@ -602,14 +588,11 @@ def describe_link(link: str) -> str:
 
 
 def write_list(filename: str, entries: list[str]) -> None:
-    """Write a plain list and its base64 twin."""
+    """Write a list of configs, one per line."""
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     text = "\n".join(entries) + "\n"
     with open(os.path.join(OUTPUT_DIR, filename), "w", encoding="utf-8") as f:
         f.write(text)
-    base = os.path.splitext(filename)[0] + "_base64.txt"
-    with open(os.path.join(OUTPUT_DIR, base), "w", encoding="utf-8") as f:
-        f.write(base64.b64encode(text.encode()).decode() + "\n")
 
 
 def update_stats(key: str, values: dict) -> None:

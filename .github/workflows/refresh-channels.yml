@@ -1,4 +1,4 @@
-name: Refresh sources
+name: Refresh channels
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: refresh-sources
+  group: refresh-channels
   cancel-in-progress: false
 
 jobs:
@@ -23,8 +23,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Check every source and update the list
-        run: python3 scripts/refresh_sources.py --update
+      - name: Check every channel and update the list
+        run: python3 scripts/refresh_channels.py --update
 
       - name: Build the Mahsa configs
         run: python3 scripts/build_mahsa.py
@@ -34,15 +34,15 @@ jobs:
           test -s output/mahsa_configs.txt
           test -s output/mahsa_readable.txt
           test -s output/mahsa_xray_configs.json
-          test -s output/source_status.json
-          python3 -c "import json; s=json.load(open('output/source_status.json')); print('working sources:', s['working'], 'of', s['total'])"
+          test -s output/channel_status.json
+          python3 -c "import json; s=json.load(open('output/channel_status.json')); print('working channels:', s['working'], 'of', s['total'])"
 
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/ scripts/sources.txt
+          git add output/ scripts/channels.txt
           git diff --cached --quiet && exit 0
-          git commit -m "Refresh sources $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "Refresh channels $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase origin main
           git push origin HEAD:main

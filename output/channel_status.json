@@ -1,0 +1,514 @@
+{
+  "checked_at": "2026-10-21T13:26:01Z",
+  "total": 72,
+  "working": 61,
+  "broken": 11,
+  "unchecked": [],
+  "elapsed_seconds": 2.5,
+  "channels": [
+    {
+      "channel": "vlessconfig",
+      "ok": true,
+      "links": 14,
+      "posts": 23,
+      "error": ""
+    },
+    {
+      "channel": "ConfigV2rayNG",
+      "ok": true,
+      "links": 288,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "orange_vpns",
+      "ok": true,
+      "links": 199,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "LonUp_M",
+      "ok": true,
+      "links": 170,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "Outline_Vpn",
+      "ok": true,
+      "links": 156,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "prrofile_purple",
+      "ok": true,
+      "links": 145,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "oneclickvpnkeys",
+      "ok": true,
+      "links": 121,
+      "posts": 17,
+      "error": ""
+    },
+    {
+      "channel": "V2ray_Alpha",
+      "ok": true,
+      "links": 109,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "tv2rayrr",
+      "ok": true,
+      "links": 86,
+      "posts": 15,
+      "error": ""
+    },
+    {
+      "channel": "fastkanfig",
+      "ok": true,
+      "links": 80,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "v2raying",
+      "ok": true,
+      "links": 78,
+      "posts": 17,
+      "error": ""
+    },
+    {
+      "channel": "Hope_Net",
+      "ok": true,
+      "links": 73,
+      "posts": 19,
+      "error": ""
+    },
+    {
+      "channel": "An0nymousTeam",
+      "ok": true,
+      "links": 69,
+      "posts": 23,
+      "error": ""
+    },
+    {
+      "channel": "v2Source",
+      "ok": true,
+      "links": 62,
+      "posts": 27,
+      "error": ""
+    },
+    {
+      "channel": "proxy_mtm",
+      "ok": true,
+      "links": 53,
+      "posts": 19,
+      "error": ""
+    },
+    {
+      "channel": "vpnaloo",
+      "ok": true,
+      "links": 46,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "OutlineReleasedKey",
+      "ok": true,
+      "links": 39,
+      "posts": 18,
+      "error": ""
+    },
+    {
+      "channel": "ShadowsocksM",
+      "ok": true,
+      "links": 37,
+      "posts": 19,
+      "error": ""
+    },
+    {
+      "channel": "configfa",
+      "ok": true,
+      "links": 36,
+      "posts": 22,
+      "error": ""
+    },
+    {
+      "channel": "proxy_kafee",
+      "ok": true,
+      "links": 34,
+      "posts": 9,
+      "error": ""
+    },
+    {
+      "channel": "V2RAYROZ",
+      "ok": true,
+      "links": 33,
+      "posts": 25,
+      "error": ""
+    },
+    {
+      "channel": "v2raybaz",
+      "ok": true,
+      "links": 33,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "ISVvpn",
+      "ok": true,
+      "links": 32,
+      "posts": 18,
+      "error": ""
+    },
+    {
+      "channel": "V2rayNG_Outlinee",
+      "ok": true,
+      "links": 20,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "FreeV2rays",
+      "ok": true,
+      "links": 20,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "v2ray_free_conf",
+      "ok": true,
+      "links": 20,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "v2nodes",
+      "ok": true,
+      "links": 20,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "golestan_vpn",
+      "ok": true,
+      "links": 19,
+      "posts": 19,
+      "error": ""
+    },
+    {
+      "channel": "ELiV2RAY",
+      "ok": true,
+      "links": 18,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "SafeNet_Server",
+      "ok": true,
+      "links": 18,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "vpnstorefast",
+      "ok": true,
+      "links": 18,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "Free_Vpn_for_All_of_Us",
+      "ok": true,
+      "links": 18,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "freedomofinfor",
+      "ok": true,
+      "links": 17,
+      "posts": 18,
+      "error": ""
+    },
+    {
+      "channel": "lrnbymaa",
+      "ok": true,
+      "links": 16,
+      "posts": 19,
+      "error": ""
+    },
+    {
+      "channel": "CryptoGuardVPN",
+      "ok": true,
+      "links": 16,
+      "posts": 12,
+      "error": ""
+    },
+    {
+      "channel": "PrivateVPNs",
+      "ok": true,
+      "links": 14,
+      "posts": 23,
+      "error": ""
+    },
+    {
+      "channel": "DirectVPN",
+      "ok": true,
+      "links": 14,
+      "posts": 23,
+      "error": ""
+    },
+    {
+      "channel": "freeiranianv2rey",
+      "ok": true,
+      "links": 12,
+      "posts": 22,
+      "error": ""
+    },
+    {
+      "channel": "vpnfail_vless",
+      "ok": true,
+      "links": 12,
+      "posts": 19,
+      "error": ""
+    },
+    {
+      "channel": "viturey",
+      "ok": true,
+      "links": 11,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "BESTFORBEST66",
+      "ok": true,
+      "links": 7,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "DarkVPNpro",
+      "ok": true,
+      "links": 6,
+      "posts": 18,
+      "error": ""
+    },
+    {
+      "channel": "redfree8",
+      "ok": true,
+      "links": 6,
+      "posts": 22,
+      "error": ""
+    },
+    {
+      "channel": "VmessProtocol",
+      "ok": true,
+      "links": 5,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "mehduox_vpn",
+      "ok": true,
+      "links": 5,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "xroVPN",
+      "ok": true,
+      "links": 5,
+      "posts": 8,
+      "error": ""
+    },
+    {
+      "channel": "proSSH",
+      "ok": true,
+      "links": 4,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "v2rayfree",
+      "ok": true,
+      "links": 4,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "Ln2Ray",
+      "ok": true,
+      "links": 4,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "Ahmedhamoomi_Servers",
+      "ok": true,
+      "links": 2,
+      "posts": 22,
+      "error": ""
+    },
+    {
+      "channel": "GrizzlyVPN",
+      "ok": true,
+      "links": 2,
+      "posts": 24,
+      "error": ""
+    },
+    {
+      "channel": "freevpnconfigso",
+      "ok": true,
+      "links": 2,
+      "posts": 7,
+      "error": ""
+    },
+    {
+      "channel": "v2rayng_fast",
+      "ok": true,
+      "links": 62,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "v2rayNG_Matsuri",
+      "ok": true,
+      "links": 88,
+      "posts": 22,
+      "error": ""
+    },
+    {
+      "channel": "V2ray_Configs",
+      "ok": true,
+      "links": 228,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "v2ray_fre",
+      "ok": true,
+      "links": 3,
+      "posts": 6,
+      "error": ""
+    },
+    {
+      "channel": "ManVPN",
+      "ok": true,
+      "links": 28,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "v2ray24",
+      "ok": true,
+      "links": 18,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "filembad",
+      "ok": true,
+      "links": 70,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "ProxyMtpVPN",
+      "ok": true,
+      "links": 5,
+      "posts": 21,
+      "error": ""
+    },
+    {
+      "channel": "canfingV2rayNG",
+      "ok": true,
+      "links": 51,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "v2Line",
+      "ok": false,
+      "links": 0,
+      "posts": 21,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "v2ray_configs_pool",
+      "ok": false,
+      "links": 0,
+      "posts": 1,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "shadowproxy66",
+      "ok": false,
+      "links": 0,
+      "posts": 9,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "V2rayCollectorDonate",
+      "ok": false,
+      "links": 0,
+      "posts": 0,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "abc_configs",
+      "ok": false,
+      "links": 0,
+      "posts": 2,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "OnlineVpnConfigs",
+      "ok": false,
+      "links": 0,
+      "posts": 0,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "mellvpn",
+      "ok": false,
+      "links": 0,
+      "posts": 20,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "blackRay",
+      "ok": false,
+      "links": 0,
+      "posts": 20,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "Config_magazine",
+      "ok": false,
+      "links": 0,
+      "posts": 2,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "NetMeli9",
+      "ok": false,
+      "links": 0,
+      "posts": 19,
+      "error": "no config links in the preview"
+    },
+    {
+      "channel": "XpnTeam",
+      "ok": false,
+      "links": 0,
+      "posts": 29,
+      "error": "no config links in the preview"
+    }
+  ]
+}

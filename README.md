@@ -17,8 +17,6 @@ For example:
 `` https://raw.githubusercontent.com/shupolol/Free-configs/refs/heads/main/output/all_configs.txt ``
 
 
-Each list is also published base64-encoded, as `*_base64.txt`, for clients that expect that format.
-
 ## FlClash / Clash Meta
 
 - `output/flclash.yaml`: a ready-to-import profile for FlClash, Clash.Meta, Clash Verge, Mihomo Party and Stash
@@ -27,7 +25,7 @@ In FlClash: **Profiles → New → URL**, then paste:
 
 `` https://raw.githubusercontent.com/shupolol/Free-configs/refs/heads/main/output/flclash.yaml ``
 
-The profile has a `PROXY` group with every node, an `AUTO` group that picks the lowest-latency one, and private-address rules that stay direct. `output/flclash_base64.txt` holds the same profile base64-encoded, for clients that want a base64 subscription.
+The profile has a `PROXY` group with every node, an `AUTO` group that picks the lowest-latency one, and private-address rules that stay direct.
 
 This file is built from `all_configs.txt`, so every node in it already passed the Xray test in the same run. Two kinds of config get dropped on the way, and both are counted in `output/stats.json`:
 
@@ -46,21 +44,22 @@ Configs are sorted by the first matching tier:
 
 A config counts as skipping certificate verification only if its own link says so. Tests never turn it on by default.
 
-## Sources
+## Channels
 
-- Subscription files are listed in `scripts/sources.txt`, one URL per line. Each one is fetched on every run, decoded from base64 if needed, and its links are added to the candidate pool.
-- `scripts/refresh_sources.py` checks every source by fetching one line of config and parsing it. It runs the checks in parallel and keeps the whole check under five minutes, so a dead source stops costing a fetch on every run. With `--update` it rewrites `scripts/sources.txt` with the sources that still work and adds any new working source it finds. The result of each check is written to `output/source_status.json`.
-- `scripts/check_sources.py` goes one step further: it runs the first configs of every source through xray and reports how many answered, so a source that is online but serves dead configs is visible. The result is written to `output/source_working_check.json`.
-- Telegram channels are listed in `TELEGRAM_CHANNELS` in `scripts/configlib.py`. Only the public preview page (`t.me/s/<channel>`) is read, because `t.me/<channel>` shows a "sign in to Telegram" wall and returns no posts. Older pages are followed up to `TELEGRAM_PAGES`. Only channels with public previews work.
+The configs come from public Telegram channels, listed in `scripts/channels.txt`, one channel name per line. Every channel is read on each run.
+
+- Only the public preview page (`t.me/s/<channel>`) is read, because `t.me/<channel>` shows a "sign in to Telegram" wall and returns no posts. Older pages are followed up to `TELEGRAM_PAGES`. Only channels with public previews work.
+- `scripts/refresh_channels.py` checks every channel by reading its preview and looking for config links. The checks run in parallel and stay inside a time budget of five minutes, so a channel that stopped posting costs one request instead of a full scrape. With `--update` it rewrites `scripts/channels.txt` with the channels that still work and adds any new working channel it finds. The result of each check is written to `output/channel_status.json`.
+- `scripts/check_channels.py` goes one step further: it runs the first configs of every channel through xray and reports how many answered, so a channel that is online but serves dead configs is visible. The result is written to `output/channel_working_check.json`.
 
 Duplicates are removed by server identity, so the same config under two different names is only tested once.
 
-Telegram links are queued ahead of the subscription-file links. The files contribute far more links than fit in `TIME_BUDGET`, and a run only tests what it reaches, so anything ordered after the shuffled bulk may never be tested at all.
+The channels are scraped in parallel, and the links of all of them form one pool. A run only tests what it reaches within `TIME_BUDGET`, so the channels that post the most are not the only ones that get through.
 
 ## How a run works
 
 1. Load the previous output list. These configs go first in the test queue.
-2. Fetch the subscription files and Telegram channels, and add any new links.
+2. Read the Telegram channels and the Mahsa configs, and add any new links.
 3. Start a separate Xray process for each config and send a request through it to `https://www.gstatic.com/generate_204`. A config passes if it gets a 204 or 200 response. Each passing config is probed `PROBES` times, and the lowest delay is kept.
 4. Look up each working server's country by its hostname or IP. Servers with unknown countries are dropped.
 5. Sort, cap, rename (for example `🇩🇪 Germany 001`, where the number is the rank in that file), and write the list.
@@ -73,29 +72,29 @@ The builders run one after the other. Each one after the first reuses the earlie
 
 ## Mahsa configs
 
-`scripts/build_mahsa.py` downloads the [MahsaFreeConfig](https://github.com/mahsanet/MahsaFreeConfig) repository and turns every config in it into a readable form. The repository keeps its subscriptions as base64 blobs, so this decodes them and writes:
+`scripts/build_mahsa.py` downloads the [MahsaFreeConfig](https://github.com/mahsanet/MahsaFreeConfig) repository and turns every config in it into a readable form. The repository keeps its subscriptions as encoded blobs, so this decodes them and writes:
 
 - `output/mahsa_configs.txt`: the share links, one per line
 - `output/mahsa_readable.txt`: the same configs as readable text, field by field (protocol, server, transport, security, sni, credential)
 - `output/mahsa_xray_configs.json`: xray configurations, one object per config, ready to import
 - `output/mahsa_stats.json`: how many configs were found, and which files hold no share links
 
-The three Mahsa subscription files are also in `scripts/sources.txt`, so their configs take part in the regular test and land in `output/all_configs.txt` and the Clash profile.
+The Mahsa configs are also written to `output/mahsa_configs.txt`, and the builders read that file, so they take part in the regular test and land in `output/all_configs.txt` and the Clash profile.
 
 ## Files
 
-- `scripts/sources.txt`: the subscription list, kept up to date by `scripts/refresh_sources.py`
+- `scripts/channels.txt`: the Telegram channel list, kept up to date by `scripts/refresh_channels.py`
 - `scripts/configlib.py`: shared code for collecting, converting links, testing, geolocation, and output
 - `scripts/clashlib.py`: converts a share link into a Clash Meta proxy and writes YAML
 - `scripts/build_all_configs.py`: builds `output/all_configs.txt`
 - `scripts/build_preferred.py`: builds `output/preferred_secure.txt` and `output/working_configs.txt`
 - `scripts/build_clash.py`: builds `output/flclash.yaml` from `output/all_configs.txt`
 - `scripts/build_mahsa.py`: builds the readable Mahsa configs
-- `scripts/refresh_sources.py`: checks every source and updates `scripts/sources.txt`
-- `scripts/check_sources.py`: tests a few configs of every source through xray
+- `scripts/refresh_channels.py`: checks every channel and updates `scripts/channels.txt`
+- `scripts/check_channels.py`: tests a few configs of every channel through xray
 - `scripts/check_existing.py`: retests the current output files without the cache and writes `output/existing_check.json`
 - `.github/workflows/test-configs.yml`: installs Xray, runs the builders on a schedule, and commits `output/`
-- `.github/workflows/refresh-sources.yml`: checks the sources daily and commits the updated list
+- `.github/workflows/refresh-channels.yml`: checks the channels daily and commits the updated list
 
 ## Running it yourself
 
@@ -108,8 +107,8 @@ From the repository root:
     python scripts/build_clash.py
     python scripts/build_mahsa.py
     python scripts/check_existing.py
-    python scripts/refresh_sources.py --update
-    python scripts/check_sources.py
+    python scripts/refresh_channels.py --update
+    python scripts/check_channels.py
 
 `build_clash.py` only converts, so it runs on its own in a second or two once a list exists.
 
@@ -128,10 +127,12 @@ Set these as environment variables. Defaults are in `scripts/configlib.py` and i
 | `PREFERRED_COUNTRIES` | empty | Country codes in priority order, for example `DE,NL,FR`. Empty means no country preference |
 | `TELEGRAM_PAGES` | `5` | Pages of each Telegram channel to read |
 | `TIME_BUDGET` | `600` | Seconds each builder may spend testing |
-| `SOURCE_TIME_BUDGET` | `300` | Seconds the source check and the source test may take |
-| `SOURCE_FETCH_TIMEOUT` | `20` | Seconds allowed for one source fetch |
-| `SOURCE_WORKERS` | `16` | Sources checked in parallel |
-| `SOURCE_SAMPLE` | `3` | Configs tested per source by `check_sources.py` |
+| `TELEGRAM_WORKERS` | `16` | Channels scraped in parallel |
+| `TELEGRAM_TIMEOUT` | `20` | Seconds allowed for one Telegram page |
+| `CHANNEL_TIME_BUDGET` | `300` | Seconds the channel check and the channel test may take |
+| `CHANNEL_FETCH_TIMEOUT` | `20` | Seconds allowed for one channel fetch |
+| `CHANNEL_WORKERS` | `16` | Channels checked in parallel |
+| `CHANNEL_SAMPLE` | `3` | Configs tested per channel by `check_channels.py` |
 | `WORKERS` | `48` | Configs tested in parallel |
 | `TEST_URL` | `https://www.gstatic.com/generate_204` | URL requested through each config |
 | `TEST_TIMEOUT` | `5` | Seconds allowed per request |
@@ -147,7 +148,7 @@ In GitHub Actions, `PREFERRED_COUNTRIES` is read from the repository variable wi
 
 ## Output
 
-`output/stats.json` records, for each list, how many configs were tested, how many were working, how many were written, and how many carried over from the previous run. Under `flclash` it also records how many duplicate servers were collapsed and why any config was skipped. `output/existing_check.json` lists each config checked by `check_existing.py` with its name, host, tier, pass or fail, and delay. `output/source_status.json` records the result of every source check, and `output/source_working_check.json` how many configs of each source answered the xray test.
+`output/stats.json` records, for each list, how many configs were tested, how many were working, how many were written, and how many carried over from the previous run. Under `flclash` it also records how many duplicate servers were collapsed and why any config was skipped. `output/existing_check.json` lists each config checked by `check_existing.py` with its name, host, tier, pass or fail, and delay. `output/channel_status.json` records the result of every channel check, and `output/channel_working_check.json` how many configs of each channel answered the xray test.
 
 ## Limitations
 

@@ -1,0 +1,249 @@
+{
+  "checked_at": "2026-10-21T13:30:20Z",
+  "channels": {
+    "Outline_Vpn": {
+      "working": 0,
+      "tested": 2
+    },
+    "fastkanfig": {
+      "working": 0,
+      "tested": 2
+    },
+    "orange_vpns": {
+      "working": 2,
+      "tested": 2
+    },
+    "ConfigV2rayNG": {
+      "working": 2,
+      "tested": 2
+    },
+    "LonUp_M": {
+      "working": 2,
+      "tested": 2
+    },
+    "oneclickvpnkeys": {
+      "working": 0,
+      "tested": 2
+    },
+    "V2ray_Alpha": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2Source": {
+      "working": 1,
+      "tested": 2
+    },
+    "prrofile_purple": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2raying": {
+      "working": 0,
+      "tested": 2
+    },
+    "ShadowsocksM": {
+      "working": 0,
+      "tested": 2
+    },
+    "configfa": {
+      "working": 0,
+      "tested": 2
+    },
+    "Hope_Net": {
+      "working": 0,
+      "tested": 2
+    },
+    "An0nymousTeam": {
+      "working": 0,
+      "tested": 2
+    },
+    "proxy_mtm": {
+      "working": 0,
+      "tested": 2
+    },
+    "vpnaloo": {
+      "working": 1,
+      "tested": 2
+    },
+    "vlessconfig": {
+      "working": 0,
+      "tested": 2
+    },
+    "tv2rayrr": {
+      "working": 0,
+      "tested": 2
+    },
+    "V2rayNG_Outlinee": {
+      "working": 0,
+      "tested": 2
+    },
+    "OutlineReleasedKey": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2ray_free_conf": {
+      "working": 0,
+      "tested": 2
+    },
+    "proxy_kafee": {
+      "working": 1,
+      "tested": 2
+    },
+    "golestan_vpn": {
+      "working": 0,
+      "tested": 2
+    },
+    "ISVvpn": {
+      "working": 0,
+      "tested": 2
+    },
+    "V2RAYROZ": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2raybaz": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2nodes": {
+      "working": 0,
+      "tested": 2
+    },
+    "vpnstorefast": {
+      "working": 0,
+      "tested": 2
+    },
+    "FreeV2rays": {
+      "working": 0,
+      "tested": 2
+    },
+    "ELiV2RAY": {
+      "working": 0,
+      "tested": 2
+    },
+    "Free_Vpn_for_All_of_Us": {
+      "working": 0,
+      "tested": 2
+    },
+    "lrnbymaa": {
+      "working": 0,
+      "tested": 2
+    },
+    "freedomofinfor": {
+      "working": 0,
+      "tested": 2
+    },
+    "BESTFORBEST66": {
+      "working": 0,
+      "tested": 2
+    },
+    "freeiranianv2rey": {
+      "working": 0,
+      "tested": 2
+    },
+    "CryptoGuardVPN": {
+      "working": 0,
+      "tested": 2
+    },
+    "VmessProtocol": {
+      "working": 0,
+      "tested": 2
+    },
+    "mehduox_vpn": {
+      "working": 0,
+      "tested": 2
+    },
+    "viturey": {
+      "working": 0,
+      "tested": 2
+    },
+    "SafeNet_Server": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2rayfree": {
+      "working": 0,
+      "tested": 2
+    },
+    "Ln2Ray": {
+      "working": 0,
+      "tested": 2
+    },
+    "GrizzlyVPN": {
+      "working": 0,
+      "tested": 2
+    },
+    "Ahmedhamoomi_Servers": {
+      "working": 0,
+      "tested": 2
+    },
+    "DarkVPNpro": {
+      "working": 0,
+      "tested": 2
+    },
+    "redfree8": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2rayng_fast": {
+      "working": 2,
+      "tested": 2
+    },
+    "PrivateVPNs": {
+      "working": 0,
+      "tested": 2
+    },
+    "xroVPN": {
+      "working": 0,
+      "tested": 2
+    },
+    "proSSH": {
+      "working": 0,
+      "tested": 2
+    },
+    "ManVPN": {
+      "working": 0,
+      "tested": 2
+    },
+    "DirectVPN": {
+      "working": 0,
+      "tested": 2
+    },
+    "V2ray_Configs": {
+      "working": 0,
+      "tested": 2
+    },
+    "filembad": {
+      "working": 2,
+      "tested": 2
+    },
+    "vpnfail_vless": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2rayNG_Matsuri": {
+      "working": 0,
+      "tested": 2
+    },
+    "canfingV2rayNG": {
+      "working": 1,
+      "tested": 2
+    },
+    "ProxyMtpVPN": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2ray24": {
+      "working": 0,
+      "tested": 2
+    },
+    "freevpnconfigso": {
+      "working": 0,
+      "tested": 2
+    },
+    "v2ray_fre": {
+      "working": 0,
+      "tested": 2
+    }
+  }
+}

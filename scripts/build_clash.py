@@ -5,7 +5,6 @@ The input is an already-tested list, so every node in the profile is one that co
 this run; nothing is added that was never probed. Duplicates of the same server are collapsed
 and the nodes Clash Meta cannot represent are dropped, with the counts reported.
 """
-import base64
 import os
 import re
 import sys
@@ -122,8 +121,6 @@ def main() -> None:
     text = cl.to_yaml(build_profile(proxies))
     with open(os.path.join(c.OUTPUT_DIR, FILENAME), "w", encoding="utf-8") as f:
         f.write(text)
-    with open(os.path.join(c.OUTPUT_DIR, "flclash_base64.txt"), "w", encoding="utf-8") as f:
-        f.write(base64.b64encode(text.encode()).decode() + "\n")
 
     skipped = cl.skip_summary()
     print(f"Skipped {unsupported} configs Clash Meta cannot represent" +
