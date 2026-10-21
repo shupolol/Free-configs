@@ -17,40 +17,36 @@ import time
 import urllib.request
 from urllib.parse import parse_qs, quote, unquote, urlsplit
 
-SOURCES = [
-    "https://raw.githubusercontent.com/patterniha/Free-Configs/main/configs.txt#Patterniha-F",
-    "https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt",
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/all_extracted_configs.txt",
-    "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/config.txt",
-    "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/sub1.txt",
-    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/top100.txt",
-    "https://raw.githubusercontent.com/zhangdunlong/free-v2ray-nodes/main/unique_nodes.txt",
-    "https://raw.githubusercontent.com/zhangdunlong/free-v2ray-nodes/main/nodes_base64.txt",
+# Subscription files are listed in scripts/sources.txt, one URL per line. That file is kept by
+# scripts/refresh_sources.py, which checks every source still serves configs and drops the dead
+# ones, so a source that moves or disappears stops costing a fetch on every run.
+SOURCES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources.txt")
+
+# Used when scripts/sources.txt is missing, so the builders still work from a bare checkout.
+FALLBACK_SOURCES = [
+    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
     "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge.txt",
-    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt",
     "https://raw.githubusercontent.com/10ium/V2Hub/main/merged",
-    "https://raw.githubusercontent.com/10ium/V2Hub/main/merged_base64",
-    "https://raw.githubusercontent.com/mheidari98/.proxy/main/vless",
-    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vless.txt",
-    "https://raw.githubusercontent.com/mahanKenway/Freedom-V2Ray/main/configs/vless.txt",
-    "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
+    "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt",
     "https://raw.githubusercontent.com/mahdyaralipor/v2all/main/real_sub.txt",
-    "https://raw.githubusercontent.com/jafarm83/ConfigV2Ray/main/jafar.txt",
-    "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
-    "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt",
-    # Added: subscription files from barry-far/V2ray-Configs and nyeinkokoaung404/V2ray-Configs.
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub2.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub3.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub4.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub5.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub6.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub7.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Splitted-By-Protocol/vless.txt",
-    "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
-    "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/Sub2.txt",
-    "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/Splitted-By-Protocol/vless.txt",
+    "https://raw.githubusercontent.com/patterniha/Free-Configs/main/configs.txt",
+    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity.txt",
 ]
+
+
+def load_sources(path: str = SOURCES_FILE) -> list[str]:
+    """Read the source list. A missing or empty file falls back to the built-in list."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            urls = [line.strip() for line in f
+                    if line.strip() and not line.startswith("#")]
+    except OSError:
+        return list(FALLBACK_SOURCES)
+    return urls or list(FALLBACK_SOURCES)
+
+
+SOURCES = load_sources()
 
 # Public channels scraped from their t.me/s/<name> preview pages.
 # The plain t.me/<name> page shows a "sign in to Telegram" wall with no posts, so only the
@@ -92,10 +88,13 @@ GEO_URL = "http://ip-api.com/batch"
 
 # ---------- collecting ----------
 
-def fetch(url: str) -> str:
+def fetch(url: str, timeout: float = 30, headers: dict | None = None) -> str:
     url = url.split("#", 1)[0]
-    req = urllib.request.Request(url, headers=BROWSER_HEADERS)
-    with urllib.request.urlopen(req, timeout=30) as resp:
+    req_headers = dict(BROWSER_HEADERS)
+    if headers:
+        req_headers.update(headers)
+    req = urllib.request.Request(url, headers=req_headers)
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read().decode("utf-8", errors="ignore")
 
 
@@ -560,8 +559,51 @@ def rename(link: str, name: str) -> str:
     return f"{scheme}://{base}#{quote(name)}"
 
 
+def describe_link(link: str) -> str:
+    """One human-readable line describing a share link: protocol, endpoint, id, transport."""
+    try:
+        outbound = build_outbound(link)
+    except Exception:
+        outbound = None
+    if outbound is None:
+        return f"{link.split('://', 1)[0].lower()}: unreadable link"
+    stream = outbound.get("streamSettings", {})
+    settings = outbound.get("settings", {})
+    protocol = outbound.get("protocol", "?")
+    if "vnext" in settings:
+        entry = settings["vnext"][0]
+        endpoint = f"{entry['address']}:{entry['port']}"
+        user = entry["users"][0]
+        credential = user.get("id") or user.get("password") or ""
+        if user.get("flow"):
+            credential += f" (flow: {user['flow']})"
+    else:
+        entry = settings["servers"][0]
+        endpoint = f"{entry['address']}:{entry['port']}"
+        credential = entry.get("password", "")
+        if entry.get("method"):
+            credential = f"{entry['method']}:{credential}"
+    parts = [f"protocol: {protocol}", f"server: {endpoint}", f"transport: {stream.get('network', 'tcp')}"]
+    security = stream.get("security", "none")
+    if security != "none":
+        parts.append(f"security: {security}")
+    tls = stream.get("tlsSettings") or stream.get("realitySettings") or {}
+    if tls.get("serverName"):
+        parts.append(f"sni: {tls['serverName']}")
+    if tls.get("allowInsecure"):
+        parts.append("allowInsecure: true")
+    if stream.get("wsSettings", {}).get("path"):
+        parts.append(f"path: {stream['wsSettings']['path']}")
+    if stream.get("grpcSettings", {}).get("serviceName"):
+        parts.append(f"serviceName: {stream['grpcSettings']['serviceName']}")
+    if credential:
+        parts.append(f"credential: {credential}")
+    return " | ".join(parts)
+
+
 def write_list(filename: str, entries: list[str]) -> None:
     """Write a plain list and its base64 twin."""
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     text = "\n".join(entries) + "\n"
     with open(os.path.join(OUTPUT_DIR, filename), "w", encoding="utf-8") as f:
         f.write(text)
@@ -572,6 +614,7 @@ def write_list(filename: str, entries: list[str]) -> None:
 
 def update_stats(key: str, values: dict) -> None:
     """Merge one builder's numbers into output/stats.json without touching the others."""
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, "stats.json")
     try:
         with open(path, encoding="utf-8") as f:
