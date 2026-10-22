@@ -2,7 +2,7 @@
   {
     "name": "Mahsa 001 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
-    "link": "vless://31f185b6-e591-413b-ba72-88083a87feb2@shortbig.ir:2087?path=%2Fhokm&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=a4.ladankashani.ir&fp=unsafe&type=ws&allowInsecure=0&sni=a4.ladankashani.ir#%F0%9F%87%BA%F0%9F%87%B8%F0%9D%99%8F%F0%9D%99%9A%F0%9D%99%A1%F0%9D%99%9A%F0%9D%99%9C%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%A2%E2%AB%B8%40%F0%9D%99%AB%F0%9D%9F%AE%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%AE%F0%9D%99%89%F0%9D%99%82_%F0%9D%99%88%F0%9D%99%96%F0%9D%99%A9%F0%9D%99%A8%F0%9D%99%AA%F0%9D%99%A7%F0%9D%99%9E",
+    "link": "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:54528?security=reality&encryption=none&pbk=7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.apple.com&sid=54cca3c1c1c7#%40FarazV2ray%20",
     "config": {
       "log": {
         "loglevel": "warning"
@@ -24,30 +24,26 @@
           "settings": {
             "vnext": [
               {
-                "address": "shortbig.ir",
-                "port": 2087,
+                "address": "funagfrdfs.alixxplay.com",
+                "port": 54528,
                 "users": [
                   {
-                    "id": "31f185b6-e591-413b-ba72-88083a87feb2",
+                    "id": "57beeeb0-03fc-4fc9-94da-7604488a7134",
                     "encryption": "none",
-                    "flow": ""
+                    "flow": "xtls-rprx-vision"
                   }
                 ]
               }
             ]
           },
           "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tlsSettings": {
-              "serverName": "a4.ladankashani.ir",
-              "allowInsecure": false
-            },
-            "wsSettings": {
-              "path": "/hokm",
-              "headers": {
-                "Host": "a4.ladankashani.ir"
-              }
+            "network": "tcp",
+            "security": "reality",
+            "realitySettings": {
+              "serverName": "www.apple.com",
+              "publicKey": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo",
+              "shortId": "54cca3c1c1c7",
+              "fingerprint": "chrome"
             }
           },
           "tag": "proxy"
@@ -57,98 +53,6 @@
   },
   {
     "name": "Mahsa 002 (mci/sub_1.txt)",
-    "source": "mci/sub_1.txt",
-    "link": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.169.214.179:22222?encryption=none&security=none&type=tcp#(S102)",
-    "config": {
-      "log": {
-        "loglevel": "warning"
-      },
-      "inbounds": [
-        {
-          "listen": "127.0.0.1",
-          "port": 10808,
-          "protocol": "socks",
-          "settings": {
-            "auth": "noauth",
-            "udp": false
-          }
-        }
-      ],
-      "outbounds": [
-        {
-          "protocol": "vless",
-          "settings": {
-            "vnext": [
-              {
-                "address": "18.169.214.179",
-                "port": 22222,
-                "users": [
-                  {
-                    "id": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-                    "encryption": "none",
-                    "flow": ""
-                  }
-                ]
-              }
-            ]
-          },
-          "streamSettings": {
-            "network": "tcp",
-            "security": "none"
-          },
-          "tag": "proxy"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Mahsa 003 (mci/sub_1.txt)",
-    "source": "mci/sub_1.txt",
-    "link": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.169.214.179:22224?encryption=none&security=none&type=tcp#@VlessConfig",
-    "config": {
-      "log": {
-        "loglevel": "warning"
-      },
-      "inbounds": [
-        {
-          "listen": "127.0.0.1",
-          "port": 10808,
-          "protocol": "socks",
-          "settings": {
-            "auth": "noauth",
-            "udp": false
-          }
-        }
-      ],
-      "outbounds": [
-        {
-          "protocol": "vless",
-          "settings": {
-            "vnext": [
-              {
-                "address": "18.169.214.179",
-                "port": 22224,
-                "users": [
-                  {
-                    "id": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-                    "encryption": "none",
-                    "flow": ""
-                  }
-                ]
-              }
-            ]
-          },
-          "streamSettings": {
-            "network": "tcp",
-            "security": "none"
-          },
-          "tag": "proxy"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Mahsa 004 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "vless://3ee10440-225e-4cbc-83ed-3c80b90bcb07@188.114.98.0:2053?path=%2Fmovies%2F12345&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=mlkem768x25519plus.native.0rtt.0TIaNxGWIbxIoNec1tr6yDGALPkxDwwKGufh98_tKAw&insecure=0&host=ovh-gr1.mahkhorshidi.ir&fp=chrome&type=ws&allowInsecure=0&sni=ovh-gr1.mahkhorshidi.ir#%40FarazV2ray%20",
     "config": {
@@ -204,7 +108,7 @@
     }
   },
   {
-    "name": "Mahsa 005 (mci/sub_1.txt)",
+    "name": "Mahsa 003 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "vless://3ee10440-225e-4cbc-83ed-3c80b90bcb07@188.114.98.0:2053?encryption=mlkem768x25519plus.native.0rtt.0TIaNxGWIbxIoNec1tr6yDGALPkxDwwKGufh98_tKAw&security=tls&sni=ovh-gr1.mahkhorshidi.ir&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&type=ws&host=ovh-gr1.mahkhorshidi.ir&path=%2Fmovies%2F12345#Channel%20%3A%20%40proxy_kafee",
     "config": {
@@ -260,7 +164,7 @@
     }
   },
   {
-    "name": "Mahsa 006 (mci/sub_1.txt)",
+    "name": "Mahsa 004 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.27:19999#YFZ%20117%20%40Outline_Vpn",
     "config": {
@@ -297,7 +201,7 @@
     }
   },
   {
-    "name": "Mahsa 007 (mci/sub_1.txt)",
+    "name": "Mahsa 006 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.18:19999#%40appsooner%20%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%20%F0%9F%95%8A%EF%B8%8F",
     "config": {
@@ -334,7 +238,7 @@
     }
   },
   {
-    "name": "Mahsa 008 (mci/sub_1.txt)",
+    "name": "Mahsa 007 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.54:19999#%40FarazV2ray%20",
     "config": {
@@ -371,7 +275,7 @@
     }
   },
   {
-    "name": "Mahsa 009 (mci/sub_1.txt)",
+    "name": "Mahsa 008 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.81:19999#%40FarazV2ray%20",
     "config": {
@@ -408,7 +312,7 @@
     }
   },
   {
-    "name": "Mahsa 010 (mci/sub_1.txt)",
+    "name": "Mahsa 009 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.36:19999#%40FarazV2ray%20",
     "config": {
@@ -445,7 +349,7 @@
     }
   },
   {
-    "name": "Mahsa 011 (mci/sub_1.txt)",
+    "name": "Mahsa 010 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.72:19999#%40FarazV2ray%20",
     "config": {
@@ -482,9 +386,9 @@
     }
   },
   {
-    "name": "Mahsa 012 (mci/sub_1.txt)",
+    "name": "Mahsa 011 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
-    "link": "vless://3ee10440-225e-4cbc-83ed-3c80b90bcb07@188.114.98.0:2053?path=%2Fmovies%2F12345&security=tls&alpn=h3%2C%20h2%2C%20http%2F1.1&encryption=mlkem768x25519plus.native.0rtt.0TIaNxGWIbxIoNec1tr6yDGALPkxDwwKGufh98_tKAw&insecure=0&host=ovh-gr1.mahkhorshidi.ir&fp=firefox&type=ws&allowInsecure=0&sni=ovh-gr1.mahkhorshidi.ir#%F0%9F%87%AB%F0%9F%87%AE%F0%9D%99%8F%F0%9D%99%9A%F0%9D%99%A1%F0%9D%99%9A%F0%9D%99%9C%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%A2%E2%AB%B8%40%F0%9D%99%AB%F0%9D%9F%AE%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%AE%F0%9D%99%89%F0%9D%99%82_%F0%9D%99%88%F0%9D%99%96%F0%9D%99%A9%F0%9D%99%A8%F0%9D%99%AA%F0%9D%99%A7%F0%9D%99%9E",
+    "link": "vless://1a8ecc41-6e62-431b-8eca-87c2fa4dc286@edge10.cyrionflare.com:2052?encryption=none&security=none&type=tcp&headerType=none#Channel%20%3A%20%40Daily_Configs",
     "config": {
       "log": {
         "loglevel": "warning"
@@ -506,11 +410,11 @@
           "settings": {
             "vnext": [
               {
-                "address": "188.114.98.0",
-                "port": 2053,
+                "address": "edge10.cyrionflare.com",
+                "port": 2052,
                 "users": [
                   {
-                    "id": "3ee10440-225e-4cbc-83ed-3c80b90bcb07",
+                    "id": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286",
                     "encryption": "none",
                     "flow": ""
                   }
@@ -519,18 +423,8 @@
             ]
           },
           "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tlsSettings": {
-              "serverName": "ovh-gr1.mahkhorshidi.ir",
-              "allowInsecure": false
-            },
-            "wsSettings": {
-              "path": "/movies/12345",
-              "headers": {
-                "Host": "ovh-gr1.mahkhorshidi.ir"
-              }
-            }
+            "network": "tcp",
+            "security": "none"
           },
           "tag": "proxy"
         }
@@ -538,7 +432,7 @@
     }
   },
   {
-    "name": "Mahsa 013 (mci/sub_1.txt)",
+    "name": "Mahsa 012 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "vmess://eyJhZGQiOiIyMDAxOmJjODozMmQ3OjFhOTo6MiIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiIzYTk2NmQyMC03YjlkLTQ4Y2MtYmEyYy04ZDM4MTYxYjZkM2EiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvZ2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5nIiwicGNzIjoiIiwicG9ydCI6IjE4OTAxIiwicHMiOiJTZXJ2ZXIgMTA3Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiIsInZjbiI6IiJ9",
     "config": {
@@ -590,7 +484,7 @@
     }
   },
   {
-    "name": "Mahsa 014 (mci/sub_1.txt)",
+    "name": "Mahsa 013 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.197:8080#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands",
     "config": {
@@ -627,7 +521,7 @@
     }
   },
   {
-    "name": "Mahsa 015 (mci/sub_1.txt)",
+    "name": "Mahsa 014 (mci/sub_1.txt)",
     "source": "mci/sub_1.txt",
     "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#United+States",
     "config": {
@@ -664,7 +558,7 @@
     }
   },
   {
-    "name": "Mahsa 024 (mtn/sub_1.txt)",
+    "name": "Mahsa 022 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "vless://e75ad2eb-6c1f-45ce-8023-f5f10875df66@205.237.110.254:443?pbk=IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4&security=reality&fm=AhmadV2ray&type=tcp&sni=zsit.eu-cdn294.com&flow=xtls-rprx-vision&headerType=none&encryption=none&sid=cd2d53510b4df2a8&fp=chrome&spx=/AhmadV2ray#United+States",
     "config": {
@@ -716,7 +610,7 @@
     }
   },
   {
-    "name": "Mahsa 025 (mtn/sub_1.txt)",
+    "name": "Mahsa 023 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "vless://e75ad2eb-6c1f-45ce-8023-f5f10875df66@205.237.110.254:443?security=reality&encryption=none&pbk=IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=zsit.eu-cdn294.com&sid=cd2d53510b4df2a8#%40FarazV2ray%20",
     "config": {
@@ -768,7 +662,7 @@
     }
   },
   {
-    "name": "Mahsa 026 (mtn/sub_1.txt)",
+    "name": "Mahsa 024 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@150.40.126.22:443?mode=gun&security=reality&encryption=none&authority=BIA_TELEGRAM%40MARAMBASHI_MARAMBASHI&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=firefox&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#%40V2rayng_Fast%20%F0%9F%87%A7%F0%9F%87%B7",
     "config": {
@@ -823,7 +717,7 @@
     }
   },
   {
-    "name": "Mahsa 027 (mtn/sub_1.txt)",
+    "name": "Mahsa 025 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@150.40.126.22:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=firefox&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#%40prrofile_purple%20%7C%20%F0%9D%97%99%F0%9D%97%AE%F0%9D%97%A6%F0%9D%97%A7%20%F0%9F%92%9A",
     "config": {
@@ -878,7 +772,7 @@
     }
   },
   {
-    "name": "Mahsa 028 (mtn/sub_1.txt)",
+    "name": "Mahsa 026 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@md5.univesalsrv.com:443?mode=gun&security=reality&encryption=none&pbk=99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg&fp=firefox&type=grpc&serviceName=app.v1.PushService&sni=md5.univesalsrv.com&sid=aa9884f2982b7d3c#%40v2raybaaz%20%C2%B2",
     "config": {
@@ -933,7 +827,7 @@
     }
   },
   {
-    "name": "Mahsa 029 (segment/test_sub.txt)",
+    "name": "Mahsa 028 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-851599281-direct.peyvandha.co:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-851599281-direct.peyvandha.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OS2-VlTcTl1",
     "config": {
@@ -983,7 +877,7 @@
     }
   },
   {
-    "name": "Mahsa 030 (segment/test_sub.txt)",
+    "name": "Mahsa 029 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@zula.ir:8443?encryption=none&security=tls&sni=nasnet-os2-vlxh1.peyvandha.co&alpn=h2&fp=chrome&type=xhttp&host=nasnet-os2-vlxh1.peyvandha.co&path=%2Fnasnet%2Fcdn&mode=stream-up#NASNET%20%7C%20OS2-VLXH1",
     "config": {
@@ -1033,7 +927,7 @@
     }
   },
   {
-    "name": "Mahsa 031 (segment/test_sub.txt)",
+    "name": "Mahsa 030 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-571299667-direct.mashallahbet.com:8443?encryption=none&security=tls&sni=nasnet-571299667-direct.rahavard365.co&alpn=h2&fp=chrome&type=xhttp&host=nasnet-571299667-direct.rahavard365.co&path=%2FNASNET&mode=stream-up#NASNET%20%7C%20OV1-VlXhTl1",
     "config": {
@@ -1083,7 +977,7 @@
     }
   },
   {
-    "name": "Mahsa 032 (segment/test_sub.txt)",
+    "name": "Mahsa 031 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet.ov1.vltctl1.khastehnabashi.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-571299667-direct.rahavard365.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OV1-VlTcTl1",
     "config": {
@@ -1133,7 +1027,7 @@
     }
   },
   {
-    "name": "Mahsa 033 (segment/test_sub.txt)",
+    "name": "Mahsa 032 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-8515993155-direct.peyvandha.co:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-8515993155-direct.peyvandha.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OS1-VlTcTl1",
     "config": {

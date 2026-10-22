@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-22T08:36:24Z",
+  "checked_at": "2026-10-22T09:44:50Z",
   "total": 71,
   "working": 60,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 5.5,
+  "elapsed_seconds": 5.7,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -58,7 +58,7 @@
     {
       "channel": "V2ray_Alpha",
       "ok": true,
-      "links": 108,
+      "links": 109,
       "posts": 20,
       "error": ""
     },
@@ -107,7 +107,7 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 49,
+      "links": 44,
       "posts": 18,
       "error": ""
     },
@@ -121,7 +121,7 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 41,
+      "links": 42,
       "posts": 19,
       "error": ""
     },
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -408,7 +408,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 74,
+      "links": 94,
       "posts": 20,
       "error": ""
     },
