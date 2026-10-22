@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-22T18:58:17Z",
+  "updated_at": "2026-10-22T22:07:55Z",
   "repo": "mahsanet/MahsaFreeConfig",
   "files_read": 35,
-  "links": 32,
-  "readable": 35,
-  "xray_configs": 28,
+  "links": 28,
+  "readable": 31,
+  "xray_configs": 23,
   "skipped": {
     "app/sub.txt": "no share links (encrypted or not a share-link file)",
     "app/wireguard.txt": "no share links (encrypted or not a share-link file)",
