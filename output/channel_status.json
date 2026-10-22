@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-21T21:03:15Z",
+  "checked_at": "2026-10-22T00:01:18Z",
   "total": 72,
-  "working": 61,
-  "broken": 11,
+  "working": 59,
+  "broken": 13,
   "unchecked": [],
   "elapsed_seconds": 4.4,
   "channels": [
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 176,
+      "links": 178,
       "posts": 20,
       "error": ""
     },
@@ -107,7 +107,7 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 48,
+      "links": 49,
       "posts": 18,
       "error": ""
     },
@@ -141,16 +141,16 @@
     },
     {
       "channel": "proxy_kafee",
-      "ok": true,
-      "links": 6,
-      "posts": 17,
-      "error": ""
+      "ok": false,
+      "links": 0,
+      "posts": 13,
+      "error": "no config links in the preview"
     },
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 21,
-      "posts": 26,
+      "links": 43,
+      "posts": 23,
       "error": ""
     },
     {
@@ -373,15 +373,15 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 39,
-      "posts": 22,
+      "links": 48,
+      "posts": 21,
       "error": ""
     },
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 73,
-      "posts": 21,
+      "links": 74,
+      "posts": 20,
       "error": ""
     },
     {
@@ -415,16 +415,16 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 52,
+      "links": 60,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "ProxyMtpVPN",
-      "ok": true,
-      "links": 5,
+      "ok": false,
+      "links": 0,
       "posts": 21,
-      "error": ""
+      "error": "no config links in the preview"
     },
     {
       "channel": "canfingV2rayNG",

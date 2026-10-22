@@ -21,7 +21,6 @@ vpnaloo
 OutlineReleasedKey
 ShadowsocksM
 configfa
-proxy_kafee
 V2RAYROZ
 v2raybaz
 ISVvpn
@@ -61,5 +60,4 @@ v2ray_fre
 ManVPN
 v2ray24
 filembad
-ProxyMtpVPN
 canfingV2rayNG

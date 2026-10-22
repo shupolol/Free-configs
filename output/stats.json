@@ -2,13 +2,13 @@
   "tested": 50047,
   "available": 55980,
   "working": 200,
-  "updated_at": "2026-10-21T21:07:52Z",
+  "updated_at": "2026-10-22T00:06:40Z",
   "all_configs": {
-    "tested": 7129,
-    "candidates": 7129,
-    "working": 2239,
+    "tested": 7033,
+    "candidates": 7033,
+    "working": 2271,
     "written": 2000,
-    "kept_from_previous": 1944,
+    "kept_from_previous": 1977,
     "telegram_channels": [
       "vlessconfig",
       "ConfigV2rayNG",
@@ -29,7 +29,6 @@
       "OutlineReleasedKey",
       "ShadowsocksM",
       "configfa",
-      "proxy_kafee",
       "V2RAYROZ",
       "v2raybaz",
       "ISVvpn",
@@ -69,16 +68,15 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "ProxyMtpVPN",
       "canfingV2rayNG"
     ]
   },
   "preferred_secure": {
-    "tested": 5600,
-    "candidates": 5600,
-    "working": 736,
+    "tested": 5534,
+    "candidates": 5534,
+    "working": 781,
     "written": 200,
-    "kept_from_previous": 190,
+    "kept_from_previous": 196,
     "preferred_countries": [],
     "telegram_channels": [
       "vlessconfig",
@@ -100,7 +98,6 @@
       "OutlineReleasedKey",
       "ShadowsocksM",
       "configfa",
-      "proxy_kafee",
       "V2RAYROZ",
       "v2raybaz",
       "ISVvpn",
@@ -140,15 +137,14 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "ProxyMtpVPN",
       "canfingV2rayNG"
     ]
   },
   "flclash": {
     "source": "all_configs.txt",
     "input": 2000,
-    "written": 409,
-    "duplicates": 1591,
+    "written": 410,
+    "duplicates": 1590,
     "unsupported": 0,
     "skipped_reasons": {},
     "auto_group": 60,
@@ -172,7 +168,6 @@
       "OutlineReleasedKey",
       "ShadowsocksM",
       "configfa",
-      "proxy_kafee",
       "V2RAYROZ",
       "v2raybaz",
       "ISVvpn",
@@ -212,7 +207,6 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "ProxyMtpVPN",
       "canfingV2rayNG"
     ]
   }
