@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-22T00:01:18Z",
-  "total": 72,
+  "checked_at": "2026-10-22T04:52:18Z",
+  "total": 71,
   "working": 59,
-  "broken": 13,
+  "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 4.4,
+  "elapsed_seconds": 5.1,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -16,21 +16,21 @@
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 288,
+      "links": 240,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 199,
+      "links": 197,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 178,
+      "links": 176,
       "posts": 20,
       "error": ""
     },
@@ -51,8 +51,8 @@
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 86,
-      "posts": 15,
+      "links": 101,
+      "posts": 16,
       "error": ""
     },
     {
@@ -93,7 +93,7 @@
     {
       "channel": "An0nymousTeam",
       "ok": true,
-      "links": 56,
+      "links": 61,
       "posts": 27,
       "error": ""
     },
@@ -140,13 +140,6 @@
       "error": ""
     },
     {
-      "channel": "proxy_kafee",
-      "ok": false,
-      "links": 0,
-      "posts": 13,
-      "error": "no config links in the preview"
-    },
-    {
       "channel": "V2RAYROZ",
       "ok": true,
       "links": 43,
@@ -184,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -380,8 +373,8 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 74,
-      "posts": 20,
+      "links": 62,
+      "posts": 21,
       "error": ""
     },
     {
@@ -415,7 +408,14 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 60,
+      "links": 55,
+      "posts": 20,
+      "error": ""
+    },
+    {
+      "channel": "canfingV2rayNG",
+      "ok": true,
+      "links": 51,
       "posts": 20,
       "error": ""
     },
@@ -425,13 +425,6 @@
       "links": 0,
       "posts": 21,
       "error": "no config links in the preview"
-    },
-    {
-      "channel": "canfingV2rayNG",
-      "ok": true,
-      "links": 51,
-      "posts": 20,
-      "error": ""
     },
     {
       "channel": "v2Line",
