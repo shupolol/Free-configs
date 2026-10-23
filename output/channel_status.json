@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-23T05:35:16Z",
+  "checked_at": "2026-10-23T08:32:30Z",
   "total": 71,
   "working": 60,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 4.8,
+  "elapsed_seconds": 5.1,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 175,
+      "links": 165,
       "posts": 20,
       "error": ""
     },
@@ -44,21 +44,21 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 152,
+      "links": 144,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 57,
-      "posts": 12,
+      "links": 71,
+      "posts": 15,
       "error": ""
     },
     {
       "channel": "V2ray_Alpha",
       "ok": true,
-      "links": 93,
+      "links": 103,
       "posts": 20,
       "error": ""
     },
@@ -79,7 +79,7 @@
     {
       "channel": "v2raying",
       "ok": true,
-      "links": 79,
+      "links": 75,
       "posts": 17,
       "error": ""
     },
@@ -143,7 +143,7 @@
       "channel": "V2RAYROZ",
       "ok": true,
       "links": 60,
-      "posts": 22,
+      "posts": 21,
       "error": ""
     },
     {
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 20,
+      "links": 19,
       "posts": 20,
       "error": ""
     },
@@ -373,7 +373,7 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 52,
+      "links": 55,
       "posts": 23,
       "error": ""
     },
@@ -394,7 +394,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 32,
+      "links": 30,
       "posts": 20,
       "error": ""
     },
@@ -408,7 +408,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 51,
+      "links": 45,
       "posts": 20,
       "error": ""
     },
