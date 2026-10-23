@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-23T15:25:12Z",
+  "checked_at": "2026-10-23T19:31:12Z",
   "total": 71,
   "working": 60,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 5.5,
+  "elapsed_seconds": 4.6,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -23,14 +23,14 @@
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 232,
+      "links": 234,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 177,
+      "links": 176,
       "posts": 20,
       "error": ""
     },
@@ -44,21 +44,21 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 144,
+      "links": 145,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 86,
+      "links": 77,
       "posts": 16,
       "error": ""
     },
     {
       "channel": "V2ray_Alpha",
       "ok": true,
-      "links": 99,
+      "links": 90,
       "posts": 20,
       "error": ""
     },
@@ -107,8 +107,8 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 46,
-      "posts": 18,
+      "links": 60,
+      "posts": 19,
       "error": ""
     },
     {
@@ -142,8 +142,8 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 58,
-      "posts": 23,
+      "links": 61,
+      "posts": 25,
       "error": ""
     },
     {
@@ -303,7 +303,7 @@
     {
       "channel": "VmessProtocol",
       "ok": true,
-      "links": 5,
+      "links": 4,
       "posts": 20,
       "error": ""
     },
@@ -366,14 +366,14 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 67,
+      "links": 66,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 50,
+      "links": 48,
       "posts": 25,
       "error": ""
     },
@@ -408,7 +408,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 46,
+      "links": 59,
       "posts": 20,
       "error": ""
     },
@@ -422,7 +422,7 @@
     {
       "channel": "ProxyMtpVPN",
       "ok": true,
-      "links": 17,
+      "links": 13,
       "posts": 21,
       "error": ""
     },
