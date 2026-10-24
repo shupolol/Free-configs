@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-24T05:56:30Z",
-  "total": 71,
+  "checked_at": "2026-10-24T08:07:22Z",
+  "total": 70,
   "working": 59,
-  "broken": 12,
+  "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 5.3,
+  "elapsed_seconds": 4.3,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -23,14 +23,14 @@
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 238,
+      "links": 240,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 177,
+      "links": 168,
       "posts": 20,
       "error": ""
     },
@@ -44,15 +44,15 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 152,
+      "links": 144,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 90,
-      "posts": 16,
+      "links": 97,
+      "posts": 17,
       "error": ""
     },
     {
@@ -143,7 +143,7 @@
       "channel": "V2RAYROZ",
       "ok": true,
       "links": 82,
-      "posts": 24,
+      "posts": 23,
       "error": ""
     },
     {
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 20,
+      "links": 19,
       "posts": 20,
       "error": ""
     },
@@ -229,13 +229,6 @@
       "links": 17,
       "posts": 18,
       "error": ""
-    },
-    {
-      "channel": "lrnbymaa",
-      "ok": false,
-      "links": 0,
-      "posts": 23,
-      "error": "no config links in the preview"
     },
     {
       "channel": "CryptoGuardVPN",
@@ -408,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 32,
+      "links": 51,
       "posts": 20,
       "error": ""
     },
