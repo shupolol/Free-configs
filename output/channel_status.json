@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-23T22:35:28Z",
+  "checked_at": "2026-10-24T01:00:56Z",
   "total": 71,
   "working": 60,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.7,
+  "elapsed_seconds": 3.4,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -44,7 +44,7 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 145,
+      "links": 152,
       "posts": 20,
       "error": ""
     },
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 18,
+      "links": 19,
       "posts": 20,
       "error": ""
     },
@@ -408,7 +408,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 59,
+      "links": 56,
       "posts": 20,
       "error": ""
     },
