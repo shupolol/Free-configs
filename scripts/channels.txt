@@ -34,7 +34,6 @@ SafeNet_Server
 vpnstorefast
 Free_Vpn_for_All_of_Us
 freedomofinfor
-lrnbymaa
 CryptoGuardVPN
 PrivateVPNs
 DirectVPN
