@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-10-24T19:43:46Z",
+  "checked_at": "2026-10-24T22:08:16Z",
   "total": 70,
   "working": 59,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 5.1,
+  "elapsed_seconds": 4.8,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 16,
+      "links": 14,
       "posts": 20,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 170,
+      "links": 174,
       "posts": 20,
       "error": ""
     },
@@ -44,7 +44,7 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 152,
+      "links": 153,
       "posts": 20,
       "error": ""
     },
@@ -107,8 +107,8 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 38,
-      "posts": 19,
+      "links": 50,
+      "posts": 20,
       "error": ""
     },
     {
@@ -121,7 +121,7 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 41,
+      "links": 42,
       "posts": 18,
       "error": ""
     },
@@ -240,14 +240,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 16,
+      "links": 14,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 16,
+      "links": 14,
       "posts": 20,
       "error": ""
     },
@@ -359,8 +359,8 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 58,
-      "posts": 19,
+      "links": 59,
+      "posts": 20,
       "error": ""
     },
     {
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 63,
+      "links": 61,
       "posts": 20,
       "error": ""
     },
@@ -415,7 +415,7 @@
     {
       "channel": "ProxyMtpVPN",
       "ok": true,
-      "links": 18,
+      "links": 13,
       "posts": 20,
       "error": ""
     },
@@ -437,7 +437,7 @@
       "channel": "shadowproxy66",
       "ok": false,
       "links": 0,
-      "posts": 9,
+      "posts": 6,
       "error": "no config links in the preview"
     },
     {
