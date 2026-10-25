@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-10-25T19:56:38Z",
+  "checked_at": "2026-10-25T22:14:30Z",
   "total": 70,
   "working": 59,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 5.7,
+  "elapsed_seconds": 3.7,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 16,
+      "links": 14,
       "posts": 20,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 172,
+      "links": 177,
       "posts": 20,
       "error": ""
     },
@@ -121,8 +121,8 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 41,
-      "posts": 18,
+      "links": 44,
+      "posts": 19,
       "error": ""
     },
     {
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 18,
       "posts": 20,
       "error": ""
     },
@@ -240,14 +240,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 16,
+      "links": 14,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 16,
+      "links": 14,
       "posts": 20,
       "error": ""
     },
@@ -359,7 +359,7 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 59,
+      "links": 41,
       "posts": 19,
       "error": ""
     },
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 50,
+      "links": 45,
       "posts": 20,
       "error": ""
     },
