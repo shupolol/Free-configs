@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-10-25T08:24:48Z",
+  "checked_at": "2026-10-25T09:50:21Z",
   "total": 70,
   "working": 59,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.8,
+  "elapsed_seconds": 4.3,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -23,14 +23,14 @@
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 231,
+      "links": 233,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 168,
+      "links": 163,
       "posts": 20,
       "error": ""
     },
@@ -51,7 +51,7 @@
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 91,
+      "links": 97,
       "posts": 15,
       "error": ""
     },
@@ -142,8 +142,8 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 89,
-      "posts": 22,
+      "links": 74,
+      "posts": 23,
       "error": ""
     },
     {
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -240,14 +240,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -366,8 +366,8 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 53,
-      "posts": 24,
+      "links": 60,
+      "posts": 23,
       "error": ""
     },
     {
@@ -387,7 +387,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 22,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -415,7 +415,7 @@
     {
       "channel": "ProxyMtpVPN",
       "ok": true,
-      "links": 13,
+      "links": 5,
       "posts": 20,
       "error": ""
     },
