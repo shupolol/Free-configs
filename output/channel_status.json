@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-25T22:14:30Z",
+  "checked_at": "2026-10-26T00:24:41Z",
   "total": 70,
   "working": 59,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.7,
+  "elapsed_seconds": 4.1,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 18,
+      "links": 19,
       "posts": 20,
       "error": ""
     },
@@ -359,8 +359,8 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 41,
-      "posts": 19,
+      "links": 70,
+      "posts": 18,
       "error": ""
     },
     {
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 45,
+      "links": 29,
       "posts": 20,
       "error": ""
     },
@@ -472,7 +472,7 @@
       "channel": "blackRay",
       "ok": false,
       "links": 0,
-      "posts": 20,
+      "posts": 19,
       "error": "no config links in the preview"
     },
     {
