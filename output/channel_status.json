@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-26T05:13:34Z",
+  "checked_at": "2026-10-26T08:54:26Z",
   "total": 70,
   "working": 59,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.8,
+  "elapsed_seconds": 4.2,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -16,21 +16,21 @@
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 283,
+      "links": 269,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 238,
+      "links": 240,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 180,
+      "links": 165,
       "posts": 20,
       "error": ""
     },
@@ -44,15 +44,15 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 153,
+      "links": 145,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 79,
-      "posts": 13,
+      "links": 70,
+      "posts": 14,
       "error": ""
     },
     {
@@ -79,8 +79,8 @@
     {
       "channel": "v2raying",
       "ok": true,
-      "links": 65,
-      "posts": 17,
+      "links": 81,
+      "posts": 18,
       "error": ""
     },
     {
@@ -107,7 +107,7 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 45,
+      "links": 41,
       "posts": 20,
       "error": ""
     },
@@ -128,8 +128,8 @@
     {
       "channel": "ShadowsocksM",
       "ok": true,
-      "links": 21,
-      "posts": 16,
+      "links": 2,
+      "posts": 11,
       "error": ""
     },
     {
@@ -143,7 +143,7 @@
       "channel": "V2RAYROZ",
       "ok": true,
       "links": 81,
-      "posts": 22,
+      "posts": 21,
       "error": ""
     },
     {
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 20,
+      "links": 19,
       "posts": 20,
       "error": ""
     },
@@ -366,8 +366,8 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 63,
-      "posts": 23,
+      "links": 70,
+      "posts": 22,
       "error": ""
     },
     {
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 39,
+      "links": 55,
       "posts": 20,
       "error": ""
     },
