@@ -12,17 +12,16 @@ Mahsa 011 (mci/sub_1.txt): unreadable link
 Mahsa 012 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.42:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
 Mahsa 013 (mci/sub_1.txt): protocol: shadowsocks | server: 158.173.20.208:443 | transport: tcp | credential: aes-128-gcm:shadowsocks
 Mahsa 014 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.34:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 015 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.215:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
-Mahsa 016 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.203:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
-Mahsa 017 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.16:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 018 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.204:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 019 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.205:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
-Mahsa 020 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.235:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 021 (segment/test_sub.txt): protocol: vless | server: nasnet-851599281-direct.peyvandha.co:443 | transport: tcp | security: tls | sni: nasnet-851599281-direct.peyvandha.co | credential: nasnet (flow: xtls-rprx-vision)
-Mahsa 022 (segment/test_sub.txt): protocol: vless | server: zula.ir:8443 | transport: xhttp | security: tls | sni: nasnet-os2-vlxh1.peyvandha.co | credential: nasnet
-Mahsa 023 (segment/test_sub.txt): protocol: vless | server: nasnet-571299667-direct.mashallahbet.com:8443 | transport: xhttp | security: tls | sni: nasnet-571299667-direct.rahavard365.co | credential: nasnet
-Mahsa 024 (segment/test_sub.txt): protocol: vless | server: nasnet.ov1.vltctl1.khastehnabashi.com:443 | transport: tcp | security: tls | sni: nasnet-571299667-direct.rahavard365.co | credential: nasnet (flow: xtls-rprx-vision)
-Mahsa 025 (segment/test_sub.txt): protocol: vless | server: nasnet-8515993155-direct.peyvandha.co:443 | transport: tcp | security: tls | sni: nasnet-8515993155-direct.peyvandha.co | credential: nasnet (flow: xtls-rprx-vision)
+Mahsa 015 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.203:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
+Mahsa 016 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.16:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 017 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.204:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 018 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.205:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
+Mahsa 019 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.235:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 020 (segment/test_sub.txt): protocol: vless | server: nasnet-851599281-direct.peyvandha.co:443 | transport: tcp | security: tls | sni: nasnet-851599281-direct.peyvandha.co | credential: nasnet (flow: xtls-rprx-vision)
+Mahsa 021 (segment/test_sub.txt): protocol: vless | server: zula.ir:8443 | transport: xhttp | security: tls | sni: nasnet-os2-vlxh1.peyvandha.co | credential: nasnet
+Mahsa 022 (segment/test_sub.txt): protocol: vless | server: nasnet-571299667-direct.mashallahbet.com:8443 | transport: xhttp | security: tls | sni: nasnet-571299667-direct.rahavard365.co | credential: nasnet
+Mahsa 023 (segment/test_sub.txt): protocol: vless | server: nasnet.ov1.vltctl1.khastehnabashi.com:443 | transport: tcp | security: tls | sni: nasnet-571299667-direct.rahavard365.co | credential: nasnet (flow: xtls-rprx-vision)
+Mahsa 024 (segment/test_sub.txt): protocol: vless | server: nasnet-8515993155-direct.peyvandha.co:443 | transport: tcp | security: tls | sni: nasnet-8515993155-direct.peyvandha.co | credential: nasnet (flow: xtls-rprx-vision)
 Mahsa fragment fragment/fakehost_ws80.json #1: protocol: vless | server: 172.67.73.38:80 | transport: ws | path: /?ed=2048 | credential: 75a7a664-c179-43bc-8190-cb533e71befe
 Mahsa fragment fragment/tlshello_ws443_IranBypass.json #1: protocol: vless | server: digitalocean.com:443 | transport: ws | security: tls | sni: cDN3.irAnboOk.shoP | allowInsecure: true | path: /?ed=2048 | credential: 75a7a664-c179-43bc-8190-cb533e71befe
 Mahsa fragment fragment/tlshello_ws443_noGeoip.json #1: protocol: vless | server: digitalocean.com:443 | transport: ws | security: tls | sni: CDn3.IraNBoOK.sHOp | allowInsecure: true | path: /?ed=2048 | credential: 75a7a664-c179-43bc-8190-cb533e71befe
