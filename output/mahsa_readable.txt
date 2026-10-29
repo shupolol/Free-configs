@@ -1,36 +1,36 @@
 Mahsa 001 (mci/sub_1.txt): protocol: shadowsocks | server: 185.176.204.18:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 Mahsa 002 (mci/sub_1.txt): unreadable link
-Mahsa 003 (mci/sub_1.txt): unreadable link
-Mahsa 004 (mci/sub_1.txt): protocol: shadowsocks | server: 202.50.253.54:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-Mahsa 005 (mci/sub_1.txt): protocol: shadowsocks | server: 202.50.253.81:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-Mahsa 006 (mci/sub_1.txt): protocol: shadowsocks | server: 202.50.253.72:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-Mahsa 007 (mci/sub_1.txt): protocol: vmess | server: 2001:bc8:32d7:1a9::2:18901 | transport: ws | path: /github.com/Alvin9999-newpac/fanqiang | credential: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-Mahsa 008 (mci/sub_1.txt): protocol: shadowsocks | server: 132.243.175.144:8388 | transport: tcp | credential: chacha20-ietf-poly1305:e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-Mahsa 009 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.197:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 010 (mci/sub_1.txt): protocol: vless | server: 172.64.150.28:2082 | transport: ws | path: /fp | credential: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+Mahsa 003 (mci/sub_1.txt): protocol: shadowsocks | server: 202.50.253.27:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+Mahsa 004 (mci/sub_1.txt): unreadable link
+Mahsa 005 (mci/sub_1.txt): protocol: shadowsocks | server: 202.50.253.54:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+Mahsa 006 (mci/sub_1.txt): protocol: shadowsocks | server: 202.50.253.81:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+Mahsa 007 (mci/sub_1.txt): protocol: shadowsocks | server: 202.50.253.72:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+Mahsa 008 (mci/sub_1.txt): protocol: vmess | server: 2001:bc8:32d7:1a9::2:18901 | transport: ws | path: /github.com/Alvin9999-newpac/fanqiang | credential: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+Mahsa 009 (mci/sub_1.txt): protocol: shadowsocks | server: 132.243.175.144:8388 | transport: tcp | credential: chacha20-ietf-poly1305:e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+Mahsa 010 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.197:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
 Mahsa 011 (mci/sub_1.txt): protocol: vless | server: 172.64.150.28:2082 | transport: ws | path: /fp | credential: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-Mahsa 012 (mci/sub_1.txt): protocol: vless | server: 51.158.206.25:23576 | transport: tcp | security: reality | sni: fuck.rkn | credential: 48ff2b70-e180-582f-8866-d9a2edeed5f5 (flow: xtls-rprx-vision)
-Mahsa 013 (mci/sub_1.txt): unreadable link
-Mahsa 014 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.42:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 015 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.174:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 016 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.28:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 017 (mci/sub_1.txt): protocol: shadowsocks | server: 158.173.20.208:443 | transport: tcp | credential: aes-128-gcm:shadowsocks
-Mahsa 018 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.34:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 019 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.215:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
-Mahsa 020 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.204:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
-Mahsa 021 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.16:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 022 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.7:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 023 (mci/sub_1.txt): protocol: vless | server: 51.158.206.25:23576 | transport: tcp | security: reality | sni: fuck.rkn | credential: 48ff2b70-e180-582f-8866-d9a2edeed5f5 (flow: xtls-rprx-vision)
-Mahsa 024 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.149:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 025 (mci/sub_1.txt): protocol: vless | server: 51.158.206.97:23576 | transport: tcp | security: reality | sni: fuck.rkn | credential: 48ff2b70-e180-582f-8866-d9a2edeed5f5 (flow: xtls-rprx-vision)
+Mahsa 012 (mci/sub_1.txt): protocol: vless | server: 172.64.150.28:2082 | transport: ws | path: /fp | credential: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+Mahsa 013 (mci/sub_1.txt): protocol: vless | server: 51.158.206.25:23576 | transport: tcp | security: reality | sni: fuck.rkn | credential: 48ff2b70-e180-582f-8866-d9a2edeed5f5 (flow: xtls-rprx-vision)
+Mahsa 014 (mci/sub_1.txt): unreadable link
+Mahsa 015 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.42:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 016 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.174:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 017 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.28:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 018 (mci/sub_1.txt): protocol: shadowsocks | server: 158.173.20.208:443 | transport: tcp | credential: aes-128-gcm:shadowsocks
+Mahsa 019 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.34:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 020 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.215:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
+Mahsa 021 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.204:8080 | transport: tcp | credential: chacha20-ietf-poly1305:k1dBOmOB4oqi7Ump37a1bQ
+Mahsa 022 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.16:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 023 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.7:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 024 (mci/sub_1.txt): protocol: vless | server: 51.158.206.25:23576 | transport: tcp | security: reality | sni: fuck.rkn | credential: 48ff2b70-e180-582f-8866-d9a2edeed5f5 (flow: xtls-rprx-vision)
+Mahsa 025 (mci/sub_1.txt): protocol: shadowsocks | server: 82.38.31.149:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
 Mahsa 026 (mci/sub_1.txt): protocol: vless | server: 51.158.206.97:23576 | transport: tcp | security: reality | sni: fuck.rkn | credential: 48ff2b70-e180-582f-8866-d9a2edeed5f5 (flow: xtls-rprx-vision)
-Mahsa 027 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.204:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 028 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.235:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
-Mahsa 029 (mtn/sub_1.txt): protocol: vless | server: 193.160.140.159:8443 | transport: tcp | security: reality | sni: apple.com | credential: d4353076-3ec7-47dc-88b0-f21eb59fbfb8 (flow: xtls-rprx-vision)
-Mahsa 030 (mtn/sub_1.txt): protocol: vless | server: 193.160.141.81:8443 | transport: tcp | security: reality | sni: apple.com | credential: ee82f319-ab92-425d-8e04-28a29f33f670 (flow: xtls-rprx-vision)
+Mahsa 027 (mci/sub_1.txt): protocol: vless | server: 51.158.206.97:23576 | transport: tcp | security: reality | sni: fuck.rkn | credential: 48ff2b70-e180-582f-8866-d9a2edeed5f5 (flow: xtls-rprx-vision)
+Mahsa 028 (mci/sub_1.txt): protocol: shadowsocks | server: 193.29.139.204:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 029 (mci/sub_2.txt): protocol: shadowsocks | server: 193.29.139.235:8080 | transport: tcp | credential: chacha20-ietf-poly1305:oZIoA69Q8yhcQV8ka3Pa3A
+Mahsa 030 (mtn/sub_1.txt): protocol: vless | server: 193.160.140.159:8443 | transport: tcp | security: reality | sni: apple.com | credential: d4353076-3ec7-47dc-88b0-f21eb59fbfb8 (flow: xtls-rprx-vision)
 Mahsa 031 (mtn/sub_1.txt): protocol: vless | server: 193.160.141.81:8443 | transport: tcp | security: reality | sni: apple.com | credential: ee82f319-ab92-425d-8e04-28a29f33f670 (flow: xtls-rprx-vision)
-Mahsa 032 (mtn/sub_1.txt): unreadable link
-Mahsa 033 (mtn/sub_1.txt): protocol: shadowsocks | server: 202.50.253.27:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+Mahsa 032 (mtn/sub_1.txt): protocol: vless | server: 193.160.141.81:8443 | transport: tcp | security: reality | sni: apple.com | credential: ee82f319-ab92-425d-8e04-28a29f33f670 (flow: xtls-rprx-vision)
+Mahsa 033 (mtn/sub_1.txt): unreadable link
 Mahsa 034 (mtn/sub_1.txt): protocol: shadowsocks | server: 202.50.253.18:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 Mahsa 035 (mtn/sub_1.txt): protocol: shadowsocks | server: 202.50.253.36:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 Mahsa 036 (mtn/sub_1.txt): protocol: vless | server: 205.237.110.254:443 | transport: tcp | security: reality | sni: zsit.eu-cdn294.com | credential: e75ad2eb-6c1f-45ce-8023-f5f10875df66 (flow: xtls-rprx-vision)
