@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-29T21:49:38Z",
+  "checked_at": "2026-10-30T01:27:33Z",
   "total": 70,
   "working": 59,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 5.2,
+  "elapsed_seconds": 4.5,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -16,7 +16,7 @@
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 270,
+      "links": 283,
       "posts": 20,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 177,
+      "links": 178,
       "posts": 20,
       "error": ""
     },
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -359,15 +359,15 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 46,
-      "posts": 17,
+      "links": 36,
+      "posts": 14,
       "error": ""
     },
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
       "links": 37,
-      "posts": 22,
+      "posts": 21,
       "error": ""
     },
     {
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 83,
+      "links": 55,
       "posts": 20,
       "error": ""
     },
@@ -415,8 +415,8 @@
     {
       "channel": "ProxyMtpVPN",
       "ok": true,
-      "links": 21,
-      "posts": 20,
+      "links": 12,
+      "posts": 22,
       "error": ""
     },
     {
