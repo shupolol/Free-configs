@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-10-30T19:46:46Z",
+  "checked_at": "2026-10-30T23:22:59Z",
   "total": 70,
   "working": 59,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.3,
+  "elapsed_seconds": 5.0,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 16,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
@@ -121,7 +121,7 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 41,
+      "links": 43,
       "posts": 18,
       "error": ""
     },
@@ -240,15 +240,15 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 16,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 16,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
@@ -387,7 +387,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 26,
+      "links": 24,
       "posts": 20,
       "error": ""
     },
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 62,
+      "links": 74,
       "posts": 20,
       "error": ""
     },
