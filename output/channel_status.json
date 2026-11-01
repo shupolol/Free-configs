@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-31T22:47:00Z",
+  "checked_at": "2026-11-01T01:41:39Z",
   "total": 70,
   "working": 58,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 4.3,
+  "elapsed_seconds": 3.4,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -23,7 +23,7 @@
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 233,
+      "links": 230,
       "posts": 20,
       "error": ""
     },
@@ -129,7 +129,7 @@
       "channel": "ShadowsocksM",
       "ok": true,
       "links": 2,
-      "posts": 12,
+      "posts": 11,
       "error": ""
     },
     {
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 62,
+      "links": 51,
       "posts": 20,
       "error": ""
     },

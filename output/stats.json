@@ -2,13 +2,13 @@
   "tested": 50047,
   "available": 55980,
   "working": 200,
-  "updated_at": "2026-10-31T22:50:55Z",
+  "updated_at": "2026-11-01T01:45:32Z",
   "all_configs": {
-    "tested": 6509,
-    "candidates": 6509,
-    "working": 1535,
-    "written": 1535,
-    "kept_from_previous": 1361,
+    "tested": 6488,
+    "candidates": 6488,
+    "working": 1556,
+    "written": 1556,
+    "kept_from_previous": 1506,
     "telegram_channels": [
       "vlessconfig",
       "ConfigV2rayNG",
@@ -71,11 +71,11 @@
     ]
   },
   "preferred_secure": {
-    "tested": 5850,
-    "candidates": 5850,
-    "working": 895,
+    "tested": 5836,
+    "candidates": 5836,
+    "working": 905,
     "written": 200,
-    "kept_from_previous": 199,
+    "kept_from_previous": 197,
     "preferred_countries": [],
     "telegram_channels": [
       "vlessconfig",
@@ -140,12 +140,12 @@
   },
   "flclash": {
     "source": "all_configs.txt",
-    "input": 1535,
-    "written": 605,
-    "duplicates": 922,
-    "unsupported": 8,
+    "input": 1556,
+    "written": 630,
+    "duplicates": 919,
+    "unsupported": 7,
     "skipped_reasons": {
-      "unsupported transport 'xhttp'": 8
+      "unsupported transport 'xhttp'": 7
     },
     "auto_group": 60,
     "telegram_channels": [
