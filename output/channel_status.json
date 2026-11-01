@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-01T08:26:53Z",
+  "checked_at": "2026-11-01T10:27:04Z",
   "total": 70,
   "working": 58,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 5.1,
+  "elapsed_seconds": 5.0,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 164,
+      "links": 158,
       "posts": 20,
       "error": ""
     },
@@ -51,7 +51,7 @@
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 116,
+      "links": 118,
       "posts": 20,
       "error": ""
     },
@@ -79,7 +79,7 @@
     {
       "channel": "v2raying",
       "ok": true,
-      "links": 77,
+      "links": 85,
       "posts": 19,
       "error": ""
     },
@@ -122,7 +122,7 @@
       "channel": "OutlineReleasedKey",
       "ok": true,
       "links": 41,
-      "posts": 18,
+      "posts": 19,
       "error": ""
     },
     {
@@ -142,7 +142,7 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 39,
+      "links": 41,
       "posts": 24,
       "error": ""
     },
@@ -177,7 +177,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -240,14 +240,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -387,7 +387,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 22,
+      "links": 24,
       "posts": 20,
       "error": ""
     },
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 67,
+      "links": 74,
       "posts": 20,
       "error": ""
     },
@@ -416,7 +416,7 @@
       "channel": "ProxyMtpVPN",
       "ok": false,
       "links": 0,
-      "posts": 23,
+      "posts": 22,
       "error": "no config links in the preview"
     },
     {
