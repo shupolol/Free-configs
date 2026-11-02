@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-02T02:33:17Z",
+  "checked_at": "2026-11-02T09:54:43Z",
   "total": 70,
   "working": 59,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.2,
+  "elapsed_seconds": 4.0,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -23,14 +23,14 @@
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 230,
+      "links": 229,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 168,
+      "links": 166,
       "posts": 20,
       "error": ""
     },
@@ -44,21 +44,21 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 153,
+      "links": 145,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 102,
+      "links": 115,
       "posts": 19,
       "error": ""
     },
     {
       "channel": "V2ray_Alpha",
       "ok": true,
-      "links": 110,
+      "links": 115,
       "posts": 20,
       "error": ""
     },
@@ -79,8 +79,8 @@
     {
       "channel": "v2raying",
       "ok": true,
-      "links": 85,
-      "posts": 19,
+      "links": 78,
+      "posts": 20,
       "error": ""
     },
     {
@@ -121,7 +121,7 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 40,
+      "links": 39,
       "posts": 19,
       "error": ""
     },
@@ -142,8 +142,8 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 64,
-      "posts": 23,
+      "links": 41,
+      "posts": 25,
       "error": ""
     },
     {
@@ -240,14 +240,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -366,7 +366,7 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 28,
+      "links": 36,
       "posts": 21,
       "error": ""
     },
@@ -387,7 +387,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 24,
+      "links": 22,
       "posts": 20,
       "error": ""
     },
@@ -401,7 +401,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 65,
+      "links": 68,
       "posts": 20,
       "error": ""
     },
