@@ -19,7 +19,6 @@ v2Source
 proxy_mtm
 vpnaloo
 OutlineReleasedKey
-ShadowsocksM
 configfa
 V2RAYROZ
 v2raybaz
