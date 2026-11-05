@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-04T22:52:10Z",
+  "checked_at": "2026-11-05T02:58:11Z",
   "total": 69,
   "working": 58,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.9,
+  "elapsed_seconds": 4.8,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -16,7 +16,7 @@
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 275,
+      "links": 287,
       "posts": 20,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 167,
+      "links": 168,
       "posts": 20,
       "error": ""
     },
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 18,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -394,7 +394,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 78,
+      "links": 58,
       "posts": 20,
       "error": ""
     },
