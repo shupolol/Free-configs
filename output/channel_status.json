@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-05T10:23:51Z",
+  "checked_at": "2026-11-05T10:55:27Z",
   "total": 69,
   "working": 58,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 4.9,
+  "elapsed_seconds": 3.7,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -16,8 +16,8 @@
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 287,
-      "posts": 20,
+      "links": 247,
+      "posts": 22,
       "error": ""
     },
     {
@@ -51,8 +51,8 @@
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 129,
-      "posts": 18,
+      "links": 115,
+      "posts": 17,
       "error": ""
     },
     {
@@ -394,7 +394,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 95,
+      "links": 108,
       "posts": 20,
       "error": ""
     },
