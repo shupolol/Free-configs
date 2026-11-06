@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-06T10:51:37Z",
+  "checked_at": "2026-11-06T11:28:21Z",
   "total": 69,
   "working": 57,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 3.2,
+  "elapsed_seconds": 4.0,
   "channels": [
     {
       "channel": "vlessconfig",
