@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-06T23:28:42Z",
+  "checked_at": "2026-11-07T03:09:47Z",
   "total": 69,
   "working": 57,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 3.6,
+  "elapsed_seconds": 3.7,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -23,14 +23,14 @@
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 198,
+      "links": 195,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 179,
+      "links": 180,
       "posts": 20,
       "error": ""
     },
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -359,8 +359,8 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 34,
-      "posts": 23,
+      "links": 38,
+      "posts": 22,
       "error": ""
     },
     {
@@ -394,7 +394,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 89,
+      "links": 73,
       "posts": 20,
       "error": ""
     },

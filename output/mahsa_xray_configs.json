@@ -2,7 +2,7 @@
   {
     "name": "Mahsa 001 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
-    "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@149.40.57.134:19999#%40ghand_sheken",
+    "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@79.137.99.183:19999#%F0%9D%97%B7%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%3A%20%40pstiiill",
     "config": {
       "log": {
         "loglevel": "warning"
@@ -24,7 +24,7 @@
           "settings": {
             "servers": [
               {
-                "address": "149.40.57.134",
+                "address": "79.137.99.183",
                 "port": 19999,
                 "method": "aes-256-gcm",
                 "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
