@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-07T10:07:28Z",
+  "checked_at": "2026-11-07T10:15:29Z",
   "total": 69,
   "working": 57,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 4.0,
+  "elapsed_seconds": 3.3,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 175,
+      "links": 174,
       "posts": 20,
       "error": ""
     },
