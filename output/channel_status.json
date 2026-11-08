@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-08T03:29:55Z",
+  "checked_at": "2026-11-08T10:21:36Z",
   "total": 69,
   "working": 57,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 3.1,
+  "elapsed_seconds": 4.9,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -23,14 +23,14 @@
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 213,
+      "links": 214,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 174,
+      "links": 164,
       "posts": 20,
       "error": ""
     },
@@ -44,21 +44,21 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 153,
+      "links": 145,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 120,
+      "links": 117,
       "posts": 19,
       "error": ""
     },
     {
       "channel": "V2ray_Alpha",
       "ok": true,
-      "links": 105,
+      "links": 110,
       "posts": 20,
       "error": ""
     },
@@ -108,7 +108,7 @@
       "channel": "proxy_mtm",
       "ok": true,
       "links": 13,
-      "posts": 19,
+      "posts": 18,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
       "channel": "OutlineReleasedKey",
       "ok": true,
       "links": 40,
-      "posts": 18,
+      "posts": 19,
       "error": ""
     },
     {
@@ -135,8 +135,8 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 47,
-      "posts": 21,
+      "links": 41,
+      "posts": 23,
       "error": ""
     },
     {
@@ -233,14 +233,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -394,14 +394,14 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 45,
+      "links": 23,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "canfingV2rayNG",
       "ok": true,
-      "links": 25,
+      "links": 27,
       "posts": 20,
       "error": ""
     },
