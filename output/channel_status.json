@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-08T10:21:36Z",
+  "checked_at": "2026-11-08T10:44:10Z",
   "total": 69,
   "working": 57,
   "broken": 12,
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 164,
+      "links": 173,
       "posts": 20,
       "error": ""
     },
@@ -394,7 +394,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 23,
+      "links": 25,
       "posts": 20,
       "error": ""
     },
