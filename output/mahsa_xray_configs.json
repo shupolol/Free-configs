@@ -148,7 +148,44 @@
     }
   },
   {
-    "name": "Mahsa 007 (segment/test_sub.txt)",
+    "name": "Mahsa 007 (mtn/sub_1.txt)",
+    "source": "mtn/sub_1.txt",
+    "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@185.176.204.18:19999#%F0%9F%8C%9F%20%40MTproxy22_v2ray",
+    "config": {
+      "log": {
+        "loglevel": "warning"
+      },
+      "inbounds": [
+        {
+          "listen": "127.0.0.1",
+          "port": 10808,
+          "protocol": "socks",
+          "settings": {
+            "auth": "noauth",
+            "udp": false
+          }
+        }
+      ],
+      "outbounds": [
+        {
+          "protocol": "shadowsocks",
+          "settings": {
+            "servers": [
+              {
+                "address": "185.176.204.18",
+                "port": 19999,
+                "method": "aes-256-gcm",
+                "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+              }
+            ]
+          },
+          "tag": "proxy"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mahsa 009 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-851599281-direct.peyvandha.co:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-851599281-direct.peyvandha.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OS2-VlTcTl1",
     "config": {
@@ -198,7 +235,7 @@
     }
   },
   {
-    "name": "Mahsa 008 (segment/test_sub.txt)",
+    "name": "Mahsa 010 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@zula.ir:8443?encryption=none&security=tls&sni=nasnet-os2-vlxh1.peyvandha.co&alpn=h2&fp=chrome&type=xhttp&host=nasnet-os2-vlxh1.peyvandha.co&path=%2Fnasnet%2Fcdn&mode=stream-up#NASNET%20%7C%20OS2-VLXH1",
     "config": {
@@ -248,7 +285,7 @@
     }
   },
   {
-    "name": "Mahsa 009 (segment/test_sub.txt)",
+    "name": "Mahsa 011 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-571299667-direct.mashallahbet.com:8443?encryption=none&security=tls&sni=nasnet-571299667-direct.rahavard365.co&alpn=h2&fp=chrome&type=xhttp&host=nasnet-571299667-direct.rahavard365.co&path=%2FNASNET&mode=stream-up#NASNET%20%7C%20OV1-VlXhTl1",
     "config": {
@@ -298,7 +335,7 @@
     }
   },
   {
-    "name": "Mahsa 010 (segment/test_sub.txt)",
+    "name": "Mahsa 012 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet.ov1.vltctl1.khastehnabashi.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-571299667-direct.rahavard365.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OV1-VlTcTl1",
     "config": {
@@ -348,7 +385,7 @@
     }
   },
   {
-    "name": "Mahsa 011 (segment/test_sub.txt)",
+    "name": "Mahsa 013 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-8515993155-direct.peyvandha.co:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-8515993155-direct.peyvandha.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OS1-VlTcTl1",
     "config": {
