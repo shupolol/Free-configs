@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-08T20:54:00Z",
+  "checked_at": "2026-11-09T00:21:07Z",
   "total": 69,
   "working": 57,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 3.3,
+  "elapsed_seconds": 3.7,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 174,
+      "links": 176,
       "posts": 20,
       "error": ""
     },
@@ -107,7 +107,7 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 10,
+      "links": 21,
       "posts": 18,
       "error": ""
     },
@@ -352,8 +352,8 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 14,
-      "posts": 20,
+      "links": 9,
+      "posts": 19,
       "error": ""
     },
     {
@@ -394,7 +394,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 77,
+      "links": 73,
       "posts": 20,
       "error": ""
     },
