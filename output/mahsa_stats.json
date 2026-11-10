@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-10T15:57:20Z",
+  "updated_at": "2026-11-10T21:38:51Z",
   "repo": "mahsanet/MahsaFreeConfig",
   "files_read": 35,
-  "links": 11,
-  "readable": 14,
+  "links": 12,
+  "readable": 15,
   "xray_configs": 13,
   "skipped": {
     "app/sub.txt": "no share links (encrypted or not a share-link file)",
