@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-11T08:19:45Z",
+  "checked_at": "2026-11-11T10:56:08Z",
   "total": 69,
   "working": 57,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 3.5,
+  "elapsed_seconds": 4.9,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 168,
+      "links": 169,
       "posts": 20,
       "error": ""
     },
@@ -51,8 +51,8 @@
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 71,
-      "posts": 12,
+      "links": 85,
+      "posts": 14,
       "error": ""
     },
     {
@@ -107,8 +107,8 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 26,
-      "posts": 20,
+      "links": 27,
+      "posts": 19,
       "error": ""
     },
     {
@@ -121,7 +121,7 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 44,
+      "links": 41,
       "posts": 19,
       "error": ""
     },
@@ -135,8 +135,8 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 43,
-      "posts": 20,
+      "links": 44,
+      "posts": 22,
       "error": ""
     },
     {
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -233,14 +233,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -380,7 +380,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 24,
+      "links": 22,
       "posts": 20,
       "error": ""
     },
@@ -394,14 +394,14 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 49,
+      "links": 92,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "canfingV2rayNG",
       "ok": true,
-      "links": 12,
+      "links": 24,
       "posts": 20,
       "error": ""
     },
@@ -430,7 +430,7 @@
       "channel": "shadowproxy66",
       "ok": false,
       "links": 0,
-      "posts": 10,
+      "posts": 11,
       "error": "no config links in the preview"
     },
     {
