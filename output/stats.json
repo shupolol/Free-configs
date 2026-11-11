@@ -2,13 +2,13 @@
   "tested": 50047,
   "available": 55980,
   "working": 200,
-  "updated_at": "2026-11-11T08:23:30Z",
+  "updated_at": "2026-11-11T16:22:42Z",
   "all_configs": {
-    "tested": 6261,
-    "candidates": 6261,
-    "working": 1524,
-    "written": 1524,
-    "kept_from_previous": 1463,
+    "tested": 6272,
+    "candidates": 6272,
+    "working": 1518,
+    "written": 1518,
+    "kept_from_previous": 1405,
     "telegram_channels": [
       "vlessconfig",
       "ConfigV2rayNG",
@@ -50,7 +50,6 @@
       "BESTFORBEST66",
       "DarkVPNpro",
       "redfree8",
-      "VmessProtocol",
       "mehduox_vpn",
       "xroVPN",
       "proSSH",
@@ -66,13 +65,14 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "canfingV2rayNG"
+      "canfingV2rayNG",
+      "ProxyMtpVPN"
     ]
   },
   "preferred_secure": {
-    "tested": 5375,
-    "candidates": 5375,
-    "working": 720,
+    "tested": 5423,
+    "candidates": 5423,
+    "working": 706,
     "written": 200,
     "kept_from_previous": 185,
     "preferred_countries": [],
@@ -117,7 +117,6 @@
       "BESTFORBEST66",
       "DarkVPNpro",
       "redfree8",
-      "VmessProtocol",
       "mehduox_vpn",
       "xroVPN",
       "proSSH",
@@ -133,14 +132,15 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "canfingV2rayNG"
+      "canfingV2rayNG",
+      "ProxyMtpVPN"
     ]
   },
   "flclash": {
     "source": "all_configs.txt",
-    "input": 1524,
-    "written": 589,
-    "duplicates": 934,
+    "input": 1518,
+    "written": 586,
+    "duplicates": 931,
     "unsupported": 1,
     "skipped_reasons": {
       "unsupported transport 'xhttp'": 1
@@ -187,7 +187,6 @@
       "BESTFORBEST66",
       "DarkVPNpro",
       "redfree8",
-      "VmessProtocol",
       "mehduox_vpn",
       "xroVPN",
       "proSSH",
@@ -203,7 +202,8 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "canfingV2rayNG"
+      "canfingV2rayNG",
+      "ProxyMtpVPN"
     ]
   }
 }

@@ -42,7 +42,6 @@ viturey
 BESTFORBEST66
 DarkVPNpro
 redfree8
-VmessProtocol
 mehduox_vpn
 xroVPN
 proSSH
@@ -59,3 +58,4 @@ ManVPN
 v2ray24
 filembad
 canfingV2rayNG
+ProxyMtpVPN
