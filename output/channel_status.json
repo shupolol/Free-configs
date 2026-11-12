@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-12T11:07:36Z",
+  "checked_at": "2026-11-12T11:46:19Z",
   "total": 68,
   "working": 57,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.3,
+  "elapsed_seconds": 4.4,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -352,7 +352,7 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 86,
+      "links": 84,
       "posts": 20,
       "error": ""
     },
@@ -387,7 +387,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 79,
+      "links": 75,
       "posts": 21,
       "error": ""
     },
