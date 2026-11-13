@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-13T10:57:35Z",
+  "checked_at": "2026-11-13T15:39:32Z",
   "total": 68,
   "working": 57,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.1,
+  "elapsed_seconds": 4.8,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 177,
+      "links": 176,
       "posts": 20,
       "error": ""
     },
@@ -51,14 +51,14 @@
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 115,
+      "links": 121,
       "posts": 19,
       "error": ""
     },
     {
       "channel": "V2ray_Alpha",
       "ok": true,
-      "links": 126,
+      "links": 120,
       "posts": 20,
       "error": ""
     },
@@ -121,8 +121,8 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 41,
-      "posts": 19,
+      "links": 40,
+      "posts": 18,
       "error": ""
     },
     {
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 20,
+      "links": 19,
       "posts": 20,
       "error": ""
     },
@@ -345,14 +345,14 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 42,
-      "posts": 23,
+      "links": 44,
+      "posts": 22,
       "error": ""
     },
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 64,
+      "links": 51,
       "posts": 21,
       "error": ""
     },
@@ -387,7 +387,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 102,
+      "links": 89,
       "posts": 20,
       "error": ""
     },
@@ -400,10 +400,10 @@
     },
     {
       "channel": "ProxyMtpVPN",
-      "ok": true,
-      "links": 10,
+      "ok": false,
+      "links": 0,
       "posts": 21,
-      "error": ""
+      "error": "no config links in the preview"
     },
     {
       "channel": "v2Line",
@@ -421,10 +421,10 @@
     },
     {
       "channel": "shadowproxy66",
-      "ok": false,
-      "links": 0,
-      "posts": 10,
-      "error": "no config links in the preview"
+      "ok": true,
+      "links": 4,
+      "posts": 11,
+      "error": ""
     },
     {
       "channel": "V2rayCollectorDonate",
