@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-13T07:29:09Z",
+  "checked_at": "2026-11-13T10:57:35Z",
   "total": 68,
   "working": 57,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.6,
+  "elapsed_seconds": 3.1,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -23,14 +23,14 @@
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 231,
+      "links": 229,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 179,
+      "links": 177,
       "posts": 20,
       "error": ""
     },
@@ -51,14 +51,14 @@
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 116,
+      "links": 115,
       "posts": 19,
       "error": ""
     },
     {
       "channel": "V2ray_Alpha",
       "ok": true,
-      "links": 116,
+      "links": 126,
       "posts": 20,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 38,
+      "links": 52,
       "posts": 22,
       "error": ""
     },
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -233,14 +233,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -373,7 +373,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 22,
+      "links": 24,
       "posts": 20,
       "error": ""
     },
@@ -387,7 +387,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 67,
+      "links": 102,
       "posts": 20,
       "error": ""
     },
