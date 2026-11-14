@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-13T21:36:52Z",
+  "checked_at": "2026-11-14T01:43:19Z",
   "total": 68,
-  "working": 58,
-  "broken": 10,
+  "working": 57,
+  "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 5.0,
+  "elapsed_seconds": 2.8,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 177,
+      "links": 178,
       "posts": 20,
       "error": ""
     },
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -352,7 +352,7 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 46,
+      "links": 39,
       "posts": 21,
       "error": ""
     },
@@ -387,7 +387,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 73,
+      "links": 44,
       "posts": 20,
       "error": ""
     },
@@ -407,10 +407,10 @@
     },
     {
       "channel": "ProxyMtpVPN",
-      "ok": true,
-      "links": 10,
+      "ok": false,
+      "links": 0,
       "posts": 21,
-      "error": ""
+      "error": "no config links in the preview"
     },
     {
       "channel": "v2Line",

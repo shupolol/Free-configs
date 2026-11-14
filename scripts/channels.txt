@@ -59,4 +59,3 @@ v2ray24
 filembad
 canfingV2rayNG
 shadowproxy66
-ProxyMtpVPN
