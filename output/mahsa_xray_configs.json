@@ -91,43 +91,6 @@
   {
     "name": "Mahsa 004 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
-    "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@198.244.201.129:19999#%F0%9F%87%AC%F0%9F%87%A7%20London%2C%20ENG%2C%20United%20Kingdom",
-    "config": {
-      "log": {
-        "loglevel": "warning"
-      },
-      "inbounds": [
-        {
-          "listen": "127.0.0.1",
-          "port": 10808,
-          "protocol": "socks",
-          "settings": {
-            "auth": "noauth",
-            "udp": false
-          }
-        }
-      ],
-      "outbounds": [
-        {
-          "protocol": "shadowsocks",
-          "settings": {
-            "servers": [
-              {
-                "address": "198.244.201.129",
-                "port": 19999,
-                "method": "aes-256-gcm",
-                "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-              }
-            ]
-          },
-          "tag": "proxy"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Mahsa 005 (mtn/sub_1.txt)",
-    "source": "mtn/sub_1.txt",
     "link": "vless://7d43670b-6b08-45b9-8a24-8f3971abc132@222.167.245.16:443?security=reality&encryption=none&pbk=j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=poland.biznes.lol#%23%23%40V2rayBaaz",
     "config": {
       "log": {
@@ -178,7 +141,7 @@
     }
   },
   {
-    "name": "Mahsa 006 (mtn/sub_1.txt)",
+    "name": "Mahsa 005 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@149.40.57.134:19999#%40ghand_sheken",
     "config": {
@@ -215,7 +178,7 @@
     }
   },
   {
-    "name": "Mahsa 007 (mtn/sub_1.txt)",
+    "name": "Mahsa 006 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@216.106.178.169:19999#%40ghand_sheken",
     "config": {
@@ -252,7 +215,7 @@
     }
   },
   {
-    "name": "Mahsa 008 (mtn/sub_1.txt)",
+    "name": "Mahsa 007 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@158.51.121.221:19999#%F0%9F%87%B5%F0%9F%87%BE%F0%9D%99%8F%F0%9D%99%9A%F0%9D%99%A1%F0%9D%99%9A%F0%9D%99%9C%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%A2%E2%AB%B8%40%F0%9D%99%AB%F0%9D%9F%AE%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%AE%F0%9D%99%89%F0%9D%99%82_%F0%9D%99%88%F0%9D%99%96%F0%9D%99%A9%F0%9D%99%A8%F0%9D%99%AA%F0%9D%99%A7%F0%9D%99%9E",
     "config": {
@@ -282,6 +245,58 @@
                 "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
               }
             ]
+          },
+          "tag": "proxy"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mahsa 008 (mtn/sub_1.txt)",
+    "source": "mtn/sub_1.txt",
+    "link": "vless://25e16692-d097-4e69-9e2d-8415609c1968@78.135.73.47:443?security=reality&encryption=none&pbk=sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision-udp443&sni=www.datadoghq.com&sid=f46cd3ea3d1eb72d#%F0%9F%87%B8%F0%9F%87%A6%F0%9D%99%8F%F0%9D%99%9A%F0%9D%99%A1%F0%9D%99%9A%F0%9D%99%9C%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%A2%E2%AB%B8%40%F0%9D%99%AB%F0%9D%9F%AE%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%AE%F0%9D%99%89%F0%9D%99%82_%F0%9D%99%88%F0%9D%99%96%F0%9D%99%A9%F0%9D%99%A8%F0%9D%99%AA%F0%9D%99%A7%F0%9D%99%9E",
+    "config": {
+      "log": {
+        "loglevel": "warning"
+      },
+      "inbounds": [
+        {
+          "listen": "127.0.0.1",
+          "port": 10808,
+          "protocol": "socks",
+          "settings": {
+            "auth": "noauth",
+            "udp": false
+          }
+        }
+      ],
+      "outbounds": [
+        {
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "78.135.73.47",
+                "port": 443,
+                "users": [
+                  {
+                    "id": "25e16692-d097-4e69-9e2d-8415609c1968",
+                    "encryption": "none",
+                    "flow": "xtls-rprx-vision-udp443"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "tcp",
+            "security": "reality",
+            "realitySettings": {
+              "serverName": "www.datadoghq.com",
+              "publicKey": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+              "shortId": "f46cd3ea3d1eb72d",
+              "fingerprint": "chrome"
+            }
           },
           "tag": "proxy"
         }
