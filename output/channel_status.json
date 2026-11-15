@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-15T03:01:36Z",
+  "checked_at": "2026-11-15T10:52:00Z",
   "total": 68,
-  "working": 56,
-  "broken": 12,
+  "working": 57,
+  "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.4,
+  "elapsed_seconds": 3.3,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 180,
+      "links": 164,
       "posts": 20,
       "error": ""
     },
@@ -44,14 +44,14 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 153,
+      "links": 145,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 137,
+      "links": 129,
       "posts": 20,
       "error": ""
     },
@@ -107,8 +107,8 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 36,
-      "posts": 20,
+      "links": 35,
+      "posts": 19,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
       "channel": "OutlineReleasedKey",
       "ok": true,
       "links": 43,
-      "posts": 18,
+      "posts": 19,
       "error": ""
     },
     {
@@ -135,8 +135,8 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 25,
-      "posts": 25,
+      "links": 13,
+      "posts": 23,
       "error": ""
     },
     {
@@ -149,7 +149,7 @@
     {
       "channel": "ISVvpn",
       "ok": true,
-      "links": 34,
+      "links": 31,
       "posts": 18,
       "error": ""
     },
@@ -233,14 +233,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 20,
       "error": ""
     },
@@ -346,15 +346,8 @@
       "channel": "v2rayng_fast",
       "ok": true,
       "links": 38,
-      "posts": 17,
+      "posts": 18,
       "error": ""
-    },
-    {
-      "channel": "v2rayNG_Matsuri",
-      "ok": false,
-      "links": 0,
-      "posts": 0,
-      "error": "no config links in the preview"
     },
     {
       "channel": "V2ray_Configs",
@@ -387,7 +380,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 57,
+      "links": 78,
       "posts": 20,
       "error": ""
     },
@@ -403,6 +396,13 @@
       "ok": true,
       "links": 4,
       "posts": 9,
+      "error": ""
+    },
+    {
+      "channel": "v2rayNG_Matsuri",
+      "ok": true,
+      "links": 44,
+      "posts": 21,
       "error": ""
     },
     {
@@ -479,7 +479,7 @@
       "channel": "XpnTeam",
       "ok": false,
       "links": 0,
-      "posts": 29,
+      "posts": 28,
       "error": "no config links in the preview"
     }
   ]
