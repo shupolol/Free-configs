@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-15T10:52:00Z",
+  "checked_at": "2026-11-15T10:58:33Z",
   "total": 68,
   "working": 57,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.3,
+  "elapsed_seconds": 3.1,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -346,7 +346,7 @@
       "channel": "v2rayng_fast",
       "ok": true,
       "links": 38,
-      "posts": 18,
+      "posts": 19,
       "error": ""
     },
     {
@@ -394,8 +394,8 @@
     {
       "channel": "shadowproxy66",
       "ok": true,
-      "links": 4,
-      "posts": 9,
+      "links": 17,
+      "posts": 8,
       "error": ""
     },
     {
