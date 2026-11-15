@@ -51,7 +51,6 @@ Ahmedhamoomi_Servers
 GrizzlyVPN
 freevpnconfigso
 v2rayng_fast
-v2rayNG_Matsuri
 V2ray_Configs
 v2ray_fre
 ManVPN

@@ -2,13 +2,13 @@
   "tested": 50047,
   "available": 55980,
   "working": 200,
-  "updated_at": "2026-11-14T23:39:44Z",
+  "updated_at": "2026-11-15T03:05:31Z",
   "all_configs": {
-    "tested": 6578,
-    "candidates": 6578,
-    "working": 1711,
-    "written": 1711,
-    "kept_from_previous": 1559,
+    "tested": 6428,
+    "candidates": 6428,
+    "working": 1731,
+    "written": 1731,
+    "kept_from_previous": 1680,
     "telegram_channels": [
       "vlessconfig",
       "ConfigV2rayNG",
@@ -59,7 +59,6 @@
       "GrizzlyVPN",
       "freevpnconfigso",
       "v2rayng_fast",
-      "v2rayNG_Matsuri",
       "V2ray_Configs",
       "v2ray_fre",
       "ManVPN",
@@ -70,11 +69,11 @@
     ]
   },
   "preferred_secure": {
-    "tested": 5681,
-    "candidates": 5681,
-    "working": 820,
+    "tested": 5498,
+    "candidates": 5498,
+    "working": 810,
     "written": 200,
-    "kept_from_previous": 184,
+    "kept_from_previous": 193,
     "preferred_countries": [],
     "telegram_channels": [
       "vlessconfig",
@@ -126,7 +125,6 @@
       "GrizzlyVPN",
       "freevpnconfigso",
       "v2rayng_fast",
-      "v2rayNG_Matsuri",
       "V2ray_Configs",
       "v2ray_fre",
       "ManVPN",
@@ -138,9 +136,9 @@
   },
   "flclash": {
     "source": "all_configs.txt",
-    "input": 1711,
-    "written": 618,
-    "duplicates": 1091,
+    "input": 1731,
+    "written": 631,
+    "duplicates": 1098,
     "unsupported": 2,
     "skipped_reasons": {
       "unsupported transport 'xhttp'": 2
@@ -196,7 +194,6 @@
       "GrizzlyVPN",
       "freevpnconfigso",
       "v2rayng_fast",
-      "v2rayNG_Matsuri",
       "V2ray_Configs",
       "v2ray_fre",
       "ManVPN",

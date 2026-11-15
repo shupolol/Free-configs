@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-14T23:35:51Z",
+  "checked_at": "2026-11-15T03:01:36Z",
   "total": 68,
-  "working": 57,
-  "broken": 11,
+  "working": 56,
+  "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 3.1,
+  "elapsed_seconds": 3.4,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -16,14 +16,14 @@
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 313,
+      "links": 306,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 238,
+      "links": 237,
       "posts": 20,
       "error": ""
     },
@@ -79,7 +79,7 @@
     {
       "channel": "v2raying",
       "ok": true,
-      "links": 43,
+      "links": 35,
       "posts": 20,
       "error": ""
     },
@@ -93,7 +93,7 @@
     {
       "channel": "An0nymousTeam",
       "ok": true,
-      "links": 66,
+      "links": 63,
       "posts": 21,
       "error": ""
     },
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -351,10 +351,10 @@
     },
     {
       "channel": "v2rayNG_Matsuri",
-      "ok": true,
-      "links": 44,
-      "posts": 21,
-      "error": ""
+      "ok": false,
+      "links": 0,
+      "posts": 0,
+      "error": "no config links in the preview"
     },
     {
       "channel": "V2ray_Configs",
@@ -387,7 +387,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 93,
+      "links": 57,
       "posts": 20,
       "error": ""
     },
