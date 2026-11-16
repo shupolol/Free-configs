@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-16T02:11:32Z",
+  "checked_at": "2026-11-16T09:48:14Z",
   "total": 68,
   "working": 57,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 2.7,
+  "elapsed_seconds": 3.7,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 22,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 177,
+      "links": 167,
       "posts": 20,
       "error": ""
     },
@@ -44,14 +44,14 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 153,
+      "links": 147,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 102,
+      "links": 117,
       "posts": 19,
       "error": ""
     },
@@ -108,7 +108,7 @@
       "channel": "proxy_mtm",
       "ok": true,
       "links": 34,
-      "posts": 19,
+      "posts": 20,
       "error": ""
     },
     {
@@ -135,8 +135,8 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 39,
-      "posts": 21,
+      "links": 47,
+      "posts": 20,
       "error": ""
     },
     {
@@ -149,7 +149,7 @@
     {
       "channel": "ISVvpn",
       "ok": true,
-      "links": 31,
+      "links": 32,
       "posts": 18,
       "error": ""
     },
@@ -233,14 +233,14 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 22,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 14,
+      "links": 12,
       "posts": 22,
       "error": ""
     },
@@ -345,8 +345,8 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 46,
-      "posts": 20,
+      "links": 26,
+      "posts": 13,
       "error": ""
     },
     {
@@ -380,7 +380,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 54,
+      "links": 80,
       "posts": 20,
       "error": ""
     },
