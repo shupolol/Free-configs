@@ -1,9 +1,9 @@
 Mahsa 001 (mci/sub_1.txt): protocol: shadowsocks | server: 185.176.204.18:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 Mahsa 002 (mci/sub_1.txt): unreadable link
-Mahsa 003 (mtn/sub_1.txt): protocol: vmess | server: 154.47.19.225:1270 | transport: tcp | security: tls | sni: xmfhlpy.com | credential: 5c040f1d-45db-43bd-8d46-e4950e433735
-Mahsa 004 (mtn/sub_1.txt): protocol: shadowsocks | server: 149.40.57.134:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-Mahsa 005 (mtn/sub_1.txt): protocol: vless | server: 31.77.18.220:443 | transport: tcp | security: reality | sni: google.com | credential: 4f51ca84-43ea-4087-b8a2-938e0ccbe27a (flow: xtls-rprx-vision-udp443)
-Mahsa 006 (mtn/sub_1.txt): protocol: shadowsocks | server: 156.146.38.167:443 | transport: tcp | credential: aes-128-gcm:shadowsocks
+Mahsa 003 (mtn/sub_1.txt): protocol: vless | server: 185.231.101.94:443 | transport: tcp | security: reality | sni: fuzora.net | credential: 8197b9b9-8945-460f-99c9-325ef8a8a7c3 (flow: xtls-rprx-vision)
+Mahsa 004 (mtn/sub_1.txt): protocol: vmess | server: 154.47.19.225:1270 | transport: tcp | security: tls | sni: xmfhlpy.com | credential: 5c040f1d-45db-43bd-8d46-e4950e433735
+Mahsa 005 (mtn/sub_1.txt): protocol: shadowsocks | server: 149.40.57.134:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+Mahsa 006 (mtn/sub_1.txt): protocol: vless | server: 78.135.73.47:443 | transport: tcp | security: reality | sni: www.datadoghq.com | credential: 25e16692-d097-4e69-9e2d-8415609c1968 (flow: xtls-rprx-vision-udp443)
 Mahsa 007 (segment/test_sub.txt): protocol: vless | server: nasnet-851599281-direct.peyvandha.co:443 | transport: tcp | security: tls | sni: nasnet-851599281-direct.peyvandha.co | credential: nasnet (flow: xtls-rprx-vision)
 Mahsa 008 (segment/test_sub.txt): protocol: vless | server: zula.ir:8443 | transport: xhttp | security: tls | sni: nasnet-os2-vlxh1.peyvandha.co | credential: nasnet
 Mahsa 009 (segment/test_sub.txt): protocol: vless | server: nasnet-571299667-direct.mashallahbet.com:8443 | transport: xhttp | security: tls | sni: nasnet-571299667-direct.rahavard365.co | credential: nasnet
