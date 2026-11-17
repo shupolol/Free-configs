@@ -2,13 +2,13 @@
   "tested": 50047,
   "available": 55980,
   "working": 200,
-  "updated_at": "2026-11-16T20:00:33Z",
+  "updated_at": "2026-11-17T02:48:23Z",
   "all_configs": {
-    "tested": 6435,
-    "candidates": 6435,
-    "working": 1704,
-    "written": 1704,
-    "kept_from_previous": 1546,
+    "tested": 6462,
+    "candidates": 6462,
+    "working": 1870,
+    "written": 1870,
+    "kept_from_previous": 1628,
     "telegram_channels": [
       "vlessconfig",
       "ConfigV2rayNG",
@@ -65,15 +65,15 @@
       "v2ray24",
       "filembad",
       "canfingV2rayNG",
-      "shadowproxy66"
+      "v2rayNG_Matsuri"
     ]
   },
   "preferred_secure": {
-    "tested": 5465,
-    "candidates": 5465,
-    "working": 786,
+    "tested": 5509,
+    "candidates": 5509,
+    "working": 945,
     "written": 200,
-    "kept_from_previous": 179,
+    "kept_from_previous": 182,
     "preferred_countries": [],
     "telegram_channels": [
       "vlessconfig",
@@ -131,17 +131,17 @@
       "v2ray24",
       "filembad",
       "canfingV2rayNG",
-      "shadowproxy66"
+      "v2rayNG_Matsuri"
     ]
   },
   "flclash": {
     "source": "all_configs.txt",
-    "input": 1704,
-    "written": 607,
-    "duplicates": 1093,
-    "unsupported": 4,
+    "input": 1870,
+    "written": 699,
+    "duplicates": 1168,
+    "unsupported": 3,
     "skipped_reasons": {
-      "unsupported transport 'xhttp'": 4
+      "unsupported transport 'xhttp'": 3
     },
     "auto_group": 60,
     "telegram_channels": [
@@ -200,7 +200,7 @@
       "v2ray24",
       "filembad",
       "canfingV2rayNG",
-      "shadowproxy66"
+      "v2rayNG_Matsuri"
     ]
   }
 }
