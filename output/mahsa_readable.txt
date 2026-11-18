@@ -1,7 +1,7 @@
 Mahsa 001 (mci/sub_1.txt): protocol: shadowsocks | server: 185.176.204.18:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 Mahsa 002 (mci/sub_1.txt): unreadable link
 Mahsa 003 (mtn/sub_1.txt): protocol: vmess | server: 154.47.19.225:1270 | transport: tcp | security: tls | sni: xmfhlpy.com | credential: 5c040f1d-45db-43bd-8d46-e4950e433735
-Mahsa 004 (mtn/sub_1.txt): protocol: vless | server: 143.246.211.240:443 | transport: xhttp | security: reality | sni: fr.gorobsub.com | credential: 11512726-b692-406f-ab49-7b28f44a8294
+Mahsa 004 (mtn/sub_1.txt): protocol: vless | server: 87.248.149.50:443 | transport: tcp | security: tls | sni: base.hosamobenl.co.uk | credential: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
 Mahsa 005 (mtn/sub_1.txt): protocol: shadowsocks | server: 149.40.57.134:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 Mahsa 006 (segment/test_sub.txt): protocol: vless | server: nasnet-851599281-direct.peyvandha.co:443 | transport: tcp | security: tls | sni: nasnet-851599281-direct.peyvandha.co | credential: nasnet (flow: xtls-rprx-vision)
 Mahsa 007 (segment/test_sub.txt): protocol: vless | server: zula.ir:8443 | transport: xhttp | security: tls | sni: nasnet-os2-vlxh1.peyvandha.co | credential: nasnet
