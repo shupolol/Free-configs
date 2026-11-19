@@ -39,6 +39,58 @@
   {
     "name": "Mahsa 003 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
+    "link": "vless://27f26dee-9cf1-4cca-93f8-9ac23d311408@147.45.47.101:8443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&sid=6ba85179e30d4fc2&sni=apple.com&type=tcp#%E2%99%BB%EF%B8%8F12@oneclickvpnkeys",
+    "config": {
+      "log": {
+        "loglevel": "warning"
+      },
+      "inbounds": [
+        {
+          "listen": "127.0.0.1",
+          "port": 10808,
+          "protocol": "socks",
+          "settings": {
+            "auth": "noauth",
+            "udp": false
+          }
+        }
+      ],
+      "outbounds": [
+        {
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "147.45.47.101",
+                "port": 8443,
+                "users": [
+                  {
+                    "id": "27f26dee-9cf1-4cca-93f8-9ac23d311408",
+                    "encryption": "none",
+                    "flow": "xtls-rprx-vision"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "tcp",
+            "security": "reality",
+            "realitySettings": {
+              "serverName": "apple.com",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "shortId": "6ba85179e30d4fc2",
+              "fingerprint": "chrome"
+            }
+          },
+          "tag": "proxy"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mahsa 004 (mtn/sub_1.txt)",
+    "source": "mtn/sub_1.txt",
     "link": "vmess://eyJ2IjogIjIiLCAicHMiOiAiJUYwJTlGJTg3JUE2JUYwJTlGJTg3JUI5QVRfMTBfQFN1cmZib2FyZHYycmF5IiwgImFkZCI6ICIxNTQuNDcuMTkuMjI1IiwgInBvcnQiOiAiMTI3MCIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAiYWlkIjogMCwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJzbmkiOiAieG1maGxweS5jb20ifQ==",
     "config": {
       "log": {
@@ -87,7 +139,7 @@
     }
   },
   {
-    "name": "Mahsa 004 (mtn/sub_1.txt)",
+    "name": "Mahsa 005 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@149.40.57.134:19999#%40ghand_sheken",
     "config": {
@@ -124,7 +176,7 @@
     }
   },
   {
-    "name": "Mahsa 005 (mtn/sub_1.txt)",
+    "name": "Mahsa 006 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#v2ray_dalghak",
     "config": {
@@ -161,7 +213,7 @@
     }
   },
   {
-    "name": "Mahsa 006 (segment/test_sub.txt)",
+    "name": "Mahsa 007 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-851599281-direct.peyvandha.co:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-851599281-direct.peyvandha.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OS2-VlTcTl1",
     "config": {
@@ -211,7 +263,7 @@
     }
   },
   {
-    "name": "Mahsa 007 (segment/test_sub.txt)",
+    "name": "Mahsa 008 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@zula.ir:8443?encryption=none&security=tls&sni=nasnet-os2-vlxh1.peyvandha.co&alpn=h2&fp=chrome&type=xhttp&host=nasnet-os2-vlxh1.peyvandha.co&path=%2Fnasnet%2Fcdn&mode=stream-up#NASNET%20%7C%20OS2-VLXH1",
     "config": {
@@ -261,7 +313,7 @@
     }
   },
   {
-    "name": "Mahsa 008 (segment/test_sub.txt)",
+    "name": "Mahsa 009 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-571299667-direct.mashallahbet.com:8443?encryption=none&security=tls&sni=nasnet-571299667-direct.rahavard365.co&alpn=h2&fp=chrome&type=xhttp&host=nasnet-571299667-direct.rahavard365.co&path=%2FNASNET&mode=stream-up#NASNET%20%7C%20OV1-VlXhTl1",
     "config": {
@@ -311,7 +363,7 @@
     }
   },
   {
-    "name": "Mahsa 009 (segment/test_sub.txt)",
+    "name": "Mahsa 010 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet.ov1.vltctl1.khastehnabashi.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-571299667-direct.rahavard365.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OV1-VlTcTl1",
     "config": {
@@ -361,7 +413,7 @@
     }
   },
   {
-    "name": "Mahsa 010 (segment/test_sub.txt)",
+    "name": "Mahsa 011 (segment/test_sub.txt)",
     "source": "segment/test_sub.txt",
     "link": "vless://nasnet@nasnet-8515993155-direct.peyvandha.co:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=nasnet-8515993155-direct.peyvandha.co&alpn=h2&fp=chrome&type=tcp&headerType=none#NASNET%20%7C%20OS1-VlTcTl1",
     "config": {
