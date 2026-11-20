@@ -1,6 +1,6 @@
 Mahsa 001 (mci/sub_1.txt): protocol: shadowsocks | server: 185.176.204.18:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 Mahsa 002 (mci/sub_1.txt): unreadable link
-Mahsa 003 (mtn/sub_1.txt): protocol: shadowsocks | server: 18.130.78.177:443 | transport: tcp | credential: 2022-blake3-chacha20-poly1305:Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
+Mahsa 003 (mtn/sub_1.txt): protocol: shadowsocks | server: 57.131.27.21:8388 | transport: tcp | credential: aes-256-gcm:itzvpn@321
 Mahsa 004 (mtn/sub_1.txt): protocol: vless | server: 147.45.47.101:8443 | transport: tcp | security: reality | sni: apple.com | credential: 27f26dee-9cf1-4cca-93f8-9ac23d311408 (flow: xtls-rprx-vision)
 Mahsa 005 (mtn/sub_1.txt): protocol: vmess | server: 154.47.19.225:1270 | transport: tcp | security: tls | sni: xmfhlpy.com | credential: 5c040f1d-45db-43bd-8d46-e4950e433735
 Mahsa 006 (mtn/sub_1.txt): protocol: shadowsocks | server: 149.40.57.134:19999 | transport: tcp | credential: aes-256-gcm:ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=

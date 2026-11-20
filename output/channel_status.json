@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-20T11:38:30Z",
+  "checked_at": "2026-11-20T13:48:59Z",
   "total": 68,
   "working": 56,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 3.3,
+  "elapsed_seconds": 3.2,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -16,21 +16,21 @@
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 291,
+      "links": 278,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 239,
+      "links": 243,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 176,
+      "links": 172,
       "posts": 20,
       "error": ""
     },
@@ -79,7 +79,7 @@
     {
       "channel": "v2raying",
       "ok": true,
-      "links": 55,
+      "links": 64,
       "posts": 20,
       "error": ""
     },
@@ -345,7 +345,7 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 60,
+      "links": 43,
       "posts": 19,
       "error": ""
     },
@@ -366,7 +366,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 18,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -380,7 +380,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 95,
+      "links": 84,
       "posts": 20,
       "error": ""
     },
@@ -472,7 +472,7 @@
       "channel": "NetMeli9",
       "ok": false,
       "links": 0,
-      "posts": 19,
+      "posts": 17,
       "error": "no config links in the preview"
     },
     {

@@ -39,7 +39,7 @@
   {
     "name": "Mahsa 003 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
-    "link": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6Q2cyRHc0T2hkQlpocWJlTzlaVEEzZy9Hay9BdnNyWVpHaEFKZUduUUl4ND0@18.130.78.177:443#%40Shh_Proxy-New%C2%B9%E2%81%B0",
+    "link": "ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.27.21:8388#%F0%9F%87%AE%F0%9F%87%B9%20Italy",
     "config": {
       "log": {
         "loglevel": "warning"
@@ -61,10 +61,10 @@
           "settings": {
             "servers": [
               {
-                "address": "18.130.78.177",
-                "port": 443,
-                "method": "2022-blake3-chacha20-poly1305",
-                "password": "Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4="
+                "address": "57.131.27.21",
+                "port": 8388,
+                "method": "aes-256-gcm",
+                "password": "itzvpn@321"
               }
             ]
           },
