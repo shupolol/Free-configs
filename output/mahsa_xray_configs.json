@@ -76,6 +76,43 @@
   {
     "name": "Mahsa 004 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
+    "link": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206ZjJOcTVZTG55Y2xQYVdSOG15Ny9WZGQzWlg4VVJuY1haTmx5NStIY1VTcz06ZFE2V1ljUHBHWDV4SXhVVlBBUjh3MUE5ZVk2a0VWb0tLVzNIbGVKNm84WT0@77.90.10.175:8086#%40flyv2ray",
+    "config": {
+      "log": {
+        "loglevel": "warning"
+      },
+      "inbounds": [
+        {
+          "listen": "127.0.0.1",
+          "port": 10808,
+          "protocol": "socks",
+          "settings": {
+            "auth": "noauth",
+            "udp": false
+          }
+        }
+      ],
+      "outbounds": [
+        {
+          "protocol": "shadowsocks",
+          "settings": {
+            "servers": [
+              {
+                "address": "77.90.10.175",
+                "port": 8086,
+                "method": "2022-blake3-aes-256-gcm",
+                "password": "f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:dQ6WYcPpGX5xIxUVPAR8w1A9eY6kEVoKKW3HleJ6o8Y="
+              }
+            ]
+          },
+          "tag": "proxy"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mahsa 005 (mtn/sub_1.txt)",
+    "source": "mtn/sub_1.txt",
     "link": "vless://27f26dee-9cf1-4cca-93f8-9ac23d311408@147.45.47.101:8443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&sid=6ba85179e30d4fc2&sni=apple.com&type=tcp#%E2%99%BB%EF%B8%8F12@oneclickvpnkeys",
     "config": {
       "log": {
@@ -126,7 +163,7 @@
     }
   },
   {
-    "name": "Mahsa 005 (mtn/sub_1.txt)",
+    "name": "Mahsa 006 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
     "link": "vmess://eyJ2IjogIjIiLCAicHMiOiAiJUYwJTlGJTg3JUE2JUYwJTlGJTg3JUI5QVRfMTBfQFN1cmZib2FyZHYycmF5IiwgImFkZCI6ICIxNTQuNDcuMTkuMjI1IiwgInBvcnQiOiAiMTI3MCIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAiYWlkIjogMCwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJzbmkiOiAieG1maGxweS5jb20ifQ==",
     "config": {
@@ -176,9 +213,9 @@
     }
   },
   {
-    "name": "Mahsa 006 (mtn/sub_1.txt)",
+    "name": "Mahsa 007 (mtn/sub_1.txt)",
     "source": "mtn/sub_1.txt",
-    "link": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@149.40.57.134:19999#%40ghand_sheken",
+    "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@45.144.112.55:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&security=reality&sid=c39cc7310a&sni=yahoo.com&type=tcp#%F0%9F%8E%8395@oneclickvpnkeys",
     "config": {
       "log": {
         "loglevel": "warning"
@@ -196,53 +233,31 @@
       ],
       "outbounds": [
         {
-          "protocol": "shadowsocks",
+          "protocol": "vless",
           "settings": {
-            "servers": [
+            "vnext": [
               {
-                "address": "149.40.57.134",
-                "port": 19999,
-                "method": "aes-256-gcm",
-                "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+                "address": "45.144.112.55",
+                "port": 443,
+                "users": [
+                  {
+                    "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+                    "encryption": "none",
+                    "flow": "xtls-rprx-vision"
+                  }
+                ]
               }
             ]
           },
-          "tag": "proxy"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Mahsa 007 (mtn/sub_1.txt)",
-    "source": "mtn/sub_1.txt",
-    "link": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#v2ray_dalghak",
-    "config": {
-      "log": {
-        "loglevel": "warning"
-      },
-      "inbounds": [
-        {
-          "listen": "127.0.0.1",
-          "port": 10808,
-          "protocol": "socks",
-          "settings": {
-            "auth": "noauth",
-            "udp": false
-          }
-        }
-      ],
-      "outbounds": [
-        {
-          "protocol": "shadowsocks",
-          "settings": {
-            "servers": [
-              {
-                "address": "156.146.38.167",
-                "port": 443,
-                "method": "aes-128-gcm",
-                "password": "shadowsocks"
-              }
-            ]
+          "streamSettings": {
+            "network": "tcp",
+            "security": "reality",
+            "realitySettings": {
+              "serverName": "yahoo.com",
+              "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+              "shortId": "c39cc7310a",
+              "fingerprint": "chrome"
+            }
           },
           "tag": "proxy"
         }

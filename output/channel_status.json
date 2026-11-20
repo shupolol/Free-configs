@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-20T13:48:59Z",
+  "checked_at": "2026-11-20T21:38:04Z",
   "total": 68,
   "working": 56,
   "broken": 12,
@@ -9,8 +9,8 @@
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 12,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
@@ -44,21 +44,21 @@
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 148,
+      "links": 155,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 121,
+      "links": 116,
       "posts": 19,
       "error": ""
     },
     {
       "channel": "V2ray_Alpha",
       "ok": true,
-      "links": 97,
+      "links": 92,
       "posts": 20,
       "error": ""
     },
@@ -93,7 +93,7 @@
     {
       "channel": "An0nymousTeam",
       "ok": true,
-      "links": 67,
+      "links": 64,
       "posts": 20,
       "error": ""
     },
@@ -121,7 +121,7 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 42,
+      "links": 40,
       "posts": 19,
       "error": ""
     },
@@ -135,8 +135,8 @@
     {
       "channel": "V2RAYROZ",
       "ok": true,
-      "links": 62,
-      "posts": 23,
+      "links": 44,
+      "posts": 24,
       "error": ""
     },
     {
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 20,
+      "links": 19,
       "posts": 20,
       "error": ""
     },
@@ -233,15 +233,15 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 12,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 12,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
@@ -345,8 +345,8 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 43,
-      "posts": 19,
+      "links": 44,
+      "posts": 16,
       "error": ""
     },
     {
@@ -366,7 +366,7 @@
     {
       "channel": "ManVPN",
       "ok": true,
-      "links": 20,
+      "links": 22,
       "posts": 20,
       "error": ""
     },
@@ -380,7 +380,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 84,
+      "links": 82,
       "posts": 20,
       "error": ""
     },
@@ -394,7 +394,7 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 57,
+      "links": 59,
       "posts": 15,
       "error": ""
     },
@@ -472,7 +472,7 @@
       "channel": "NetMeli9",
       "ok": false,
       "links": 0,
-      "posts": 17,
+      "posts": 18,
       "error": "no config links in the preview"
     },
     {
