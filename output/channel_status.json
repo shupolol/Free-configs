@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-21T10:28:28Z",
+  "checked_at": "2026-11-21T10:59:56Z",
   "total": 68,
   "working": 56,
   "broken": 12,
   "unchecked": [],
-  "elapsed_seconds": 4.0,
+  "elapsed_seconds": 4.9,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 175,
+      "links": 177,
       "posts": 20,
       "error": ""
     },
@@ -380,7 +380,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 89,
+      "links": 96,
       "posts": 20,
       "error": ""
     },
@@ -423,7 +423,7 @@
       "channel": "shadowproxy66",
       "ok": false,
       "links": 0,
-      "posts": 11,
+      "posts": 8,
       "error": "no config links in the preview"
     },
     {
