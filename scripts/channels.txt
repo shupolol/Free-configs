@@ -58,3 +58,4 @@ v2ray24
 filembad
 canfingV2rayNG
 v2rayNG_Matsuri
+blackRay
