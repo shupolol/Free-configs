@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-22T10:14:19Z",
+  "checked_at": "2026-11-22T11:23:44Z",
   "total": 68,
   "working": 57,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.7,
+  "elapsed_seconds": 4.9,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -16,7 +16,7 @@
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 367,
+      "links": 355,
       "posts": 20,
       "error": ""
     },
@@ -30,7 +30,7 @@
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 166,
+      "links": 179,
       "posts": 20,
       "error": ""
     },
@@ -51,8 +51,8 @@
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 120,
-      "posts": 19,
+      "links": 106,
+      "posts": 17,
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
       "channel": "ISVvpn",
       "ok": true,
       "links": 29,
-      "posts": 19,
+      "posts": 20,
       "error": ""
     },
     {
@@ -380,7 +380,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 84,
+      "links": 83,
       "posts": 20,
       "error": ""
     },
@@ -396,6 +396,13 @@
       "ok": true,
       "links": 20,
       "posts": 11,
+      "error": ""
+    },
+    {
+      "channel": "blackRay",
+      "ok": true,
+      "links": 3,
+      "posts": 19,
       "error": ""
     },
     {
@@ -453,13 +460,6 @@
       "links": 0,
       "posts": 20,
       "error": "no config links in the preview"
-    },
-    {
-      "channel": "blackRay",
-      "ok": true,
-      "links": 3,
-      "posts": 19,
-      "error": ""
     },
     {
       "channel": "Config_magazine",
