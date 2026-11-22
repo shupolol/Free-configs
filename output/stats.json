@@ -2,13 +2,13 @@
   "tested": 50047,
   "available": 55980,
   "working": 200,
-  "updated_at": "2026-11-21T22:41:05Z",
+  "updated_at": "2026-11-22T02:42:02Z",
   "all_configs": {
-    "tested": 6755,
-    "candidates": 6755,
-    "working": 2059,
+    "tested": 6934,
+    "candidates": 6934,
+    "working": 2054,
     "written": 2000,
-    "kept_from_previous": 1715,
+    "kept_from_previous": 1937,
     "telegram_channels": [
       "vlessconfig",
       "ConfigV2rayNG",
@@ -64,13 +64,14 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "canfingV2rayNG"
+      "canfingV2rayNG",
+      "v2rayNG_Matsuri"
     ]
   },
   "preferred_secure": {
-    "tested": 5761,
-    "candidates": 5761,
-    "working": 1074,
+    "tested": 5835,
+    "candidates": 5835,
+    "working": 976,
     "written": 200,
     "kept_from_previous": 196,
     "preferred_countries": [],
@@ -129,14 +130,15 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "canfingV2rayNG"
+      "canfingV2rayNG",
+      "v2rayNG_Matsuri"
     ]
   },
   "flclash": {
     "source": "all_configs.txt",
     "input": 2000,
-    "written": 708,
-    "duplicates": 1281,
+    "written": 717,
+    "duplicates": 1272,
     "unsupported": 11,
     "skipped_reasons": {
       "unsupported transport 'xhttp'": 11
@@ -197,7 +199,8 @@
       "ManVPN",
       "v2ray24",
       "filembad",
-      "canfingV2rayNG"
+      "canfingV2rayNG",
+      "v2rayNG_Matsuri"
     ]
   }
 }
