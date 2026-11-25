@@ -1,58 +1,58 @@
 {
-  "checked_at": "2026-11-25T13:58:32Z",
+  "checked_at": "2026-11-25T22:57:35Z",
   "total": 68,
   "working": 57,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.7,
+  "elapsed_seconds": 2.9,
   "channels": [
     {
       "channel": "vlessconfig",
       "ok": true,
-      "links": 12,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
       "channel": "ConfigV2rayNG",
       "ok": true,
-      "links": 113,
-      "posts": 21,
+      "links": 254,
+      "posts": 20,
       "error": ""
     },
     {
       "channel": "orange_vpns",
       "ok": true,
-      "links": 130,
+      "links": 128,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "LonUp_M",
       "ok": true,
-      "links": 164,
+      "links": 162,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "Outline_Vpn",
       "ok": true,
-      "links": 160,
+      "links": 158,
       "posts": 23,
       "error": ""
     },
     {
       "channel": "prrofile_purple",
       "ok": true,
-      "links": 147,
+      "links": 155,
       "posts": 20,
       "error": ""
     },
     {
       "channel": "oneclickvpnkeys",
       "ok": true,
-      "links": 115,
-      "posts": 18,
+      "links": 126,
+      "posts": 19,
       "error": ""
     },
     {
@@ -107,7 +107,7 @@
     {
       "channel": "proxy_mtm",
       "ok": true,
-      "links": 19,
+      "links": 20,
       "posts": 20,
       "error": ""
     },
@@ -121,7 +121,7 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 41,
+      "links": 42,
       "posts": 18,
       "error": ""
     },
@@ -170,7 +170,7 @@
     {
       "channel": "v2ray_free_conf",
       "ok": true,
-      "links": 20,
+      "links": 18,
       "posts": 20,
       "error": ""
     },
@@ -191,7 +191,7 @@
     {
       "channel": "ELiV2RAY",
       "ok": true,
-      "links": 12,
+      "links": 8,
       "posts": 21,
       "error": ""
     },
@@ -233,15 +233,15 @@
     {
       "channel": "PrivateVPNs",
       "ok": true,
-      "links": 12,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
       "channel": "DirectVPN",
       "ok": true,
-      "links": 12,
-      "posts": 21,
+      "links": 14,
+      "posts": 22,
       "error": ""
     },
     {
@@ -345,8 +345,8 @@
     {
       "channel": "v2rayng_fast",
       "ok": true,
-      "links": 16,
-      "posts": 21,
+      "links": 23,
+      "posts": 19,
       "error": ""
     },
     {
@@ -380,7 +380,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 55,
+      "links": 70,
       "posts": 20,
       "error": ""
     },
@@ -394,7 +394,7 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 70,
+      "links": 71,
       "posts": 21,
       "error": ""
     },
@@ -430,7 +430,7 @@
       "channel": "shadowproxy66",
       "ok": false,
       "links": 0,
-      "posts": 11,
+      "posts": 10,
       "error": "no config links in the preview"
     },
     {
@@ -472,7 +472,7 @@
       "channel": "NetMeli9",
       "ok": false,
       "links": 0,
-      "posts": 19,
+      "posts": 20,
       "error": "no config links in the preview"
     },
     {
