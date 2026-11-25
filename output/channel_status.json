@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-25T12:53:47Z",
+  "checked_at": "2026-11-25T13:58:32Z",
   "total": 68,
   "working": 57,
   "broken": 11,
   "unchecked": [],
-  "elapsed_seconds": 3.0,
+  "elapsed_seconds": 3.7,
   "channels": [
     {
       "channel": "vlessconfig",
@@ -121,8 +121,8 @@
     {
       "channel": "OutlineReleasedKey",
       "ok": true,
-      "links": 44,
-      "posts": 19,
+      "links": 41,
+      "posts": 18,
       "error": ""
     },
     {
@@ -380,7 +380,7 @@
     {
       "channel": "filembad",
       "ok": true,
-      "links": 53,
+      "links": 55,
       "posts": 20,
       "error": ""
     },
@@ -394,7 +394,7 @@
     {
       "channel": "v2rayNG_Matsuri",
       "ok": true,
-      "links": 63,
+      "links": 70,
       "posts": 21,
       "error": ""
     },
