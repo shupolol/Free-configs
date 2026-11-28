@@ -1,16 +1,18 @@
 {
-  "updated_at": "2026-11-28T04:55:33Z",
+  "updated_at": "2026-11-28T11:43:33Z",
   "repo": "mahsanet/MahsaFreeConfig",
   "files_read": 35,
-  "links": 11,
-  "readable": 14,
-  "xray_configs": 14,
+  "links": 5,
+  "readable": 8,
+  "xray_configs": 8,
   "skipped": {
     "app/sub.txt": "no share links (encrypted or not a share-link file)",
     "app/wireguard.txt": "no share links (encrypted or not a share-link file)",
+    "mci/sub_1.txt": "no share links (encrypted or not a share-link file)",
     "mci/sub_2.txt": "no share links (encrypted or not a share-link file)",
     "mci/sub_3.txt": "no share links (encrypted or not a share-link file)",
     "mci/sub_4.txt": "no share links (encrypted or not a share-link file)",
+    "mtn/sub_1.txt": "no share links (encrypted or not a share-link file)",
     "mtn/sub_2.txt": "no share links (encrypted or not a share-link file)",
     "mtn/sub_3.txt": "no share links (encrypted or not a share-link file)",
     "mtn/sub_4.txt": "no share links (encrypted or not a share-link file)"
